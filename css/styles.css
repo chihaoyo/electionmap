@@ -341,6 +341,17 @@ svg {
   background: rgba(0, 0, 0, 0.32); }
   #mapEach > .city {
     display: none; }
+  #mapEach > #info {
+    display: none;
+    width: 200px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background: white;
+    color: black; }
+    #mapEach > #info > #name {
+      font-size: 18px; }
+    #mapEach > #info > #detail {
+      font-size: 14px; }
   #mapEach > #close {
     width: 64px;
     height: 64px;
