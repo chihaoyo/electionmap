@@ -7,96 +7,328 @@ svg {
   display: block;
   margin: 0 auto; }
 
-#constituencies > #TPE:hover, #constituencies > #TPE:hover > polygon, #constituencies > #TPE:hover > path {
-  fill: lime; }
-#constituencies > #TPE.active, #constituencies > #TPE.active > polygon, #constituencies > #TPE.active > path {
-  fill: red; }
-#constituencies > #NTC:hover, #constituencies > #NTC:hover > polygon, #constituencies > #NTC:hover > path {
-  fill: lime; }
-#constituencies > #NTC.active, #constituencies > #NTC.active > polygon, #constituencies > #NTC.active > path {
-  fill: red; }
-#constituencies > #KEL:hover, #constituencies > #KEL:hover > polygon, #constituencies > #KEL:hover > path {
-  fill: lime; }
-#constituencies > #KEL.active, #constituencies > #KEL.active > polygon, #constituencies > #KEL.active > path {
-  fill: red; }
-#constituencies > #TYN:hover, #constituencies > #TYN:hover > polygon, #constituencies > #TYN:hover > path {
-  fill: lime; }
-#constituencies > #TYN.active, #constituencies > #TYN.active > polygon, #constituencies > #TYN.active > path {
-  fill: red; }
-#constituencies > #HCC:hover, #constituencies > #HCC:hover > polygon, #constituencies > #HCC:hover > path {
-  fill: lime; }
-#constituencies > #HCC.active, #constituencies > #HCC.active > polygon, #constituencies > #HCC.active > path {
-  fill: red; }
-#constituencies > #HSZ:hover, #constituencies > #HSZ:hover > polygon, #constituencies > #HSZ:hover > path {
-  fill: lime; }
-#constituencies > #HSZ.active, #constituencies > #HSZ.active > polygon, #constituencies > #HSZ.active > path {
-  fill: red; }
-#constituencies > #ZMI:hover, #constituencies > #ZMI:hover > polygon, #constituencies > #ZMI:hover > path {
-  fill: lime; }
-#constituencies > #ZMI.active, #constituencies > #ZMI.active > polygon, #constituencies > #ZMI.active > path {
-  fill: red; }
-#constituencies > #TXG:hover, #constituencies > #TXG:hover > polygon, #constituencies > #TXG:hover > path {
-  fill: lime; }
-#constituencies > #TXG.active, #constituencies > #TXG.active > polygon, #constituencies > #TXG.active > path {
-  fill: red; }
-#constituencies > #CHW:hover, #constituencies > #CHW:hover > polygon, #constituencies > #CHW:hover > path {
-  fill: lime; }
-#constituencies > #CHW.active, #constituencies > #CHW.active > polygon, #constituencies > #CHW.active > path {
-  fill: red; }
-#constituencies > #NAN:hover, #constituencies > #NAN:hover > polygon, #constituencies > #NAN:hover > path {
-  fill: lime; }
-#constituencies > #NAN.active, #constituencies > #NAN.active > polygon, #constituencies > #NAN.active > path {
-  fill: red; }
-#constituencies > #YLN:hover, #constituencies > #YLN:hover > polygon, #constituencies > #YLN:hover > path {
-  fill: lime; }
-#constituencies > #YLN.active, #constituencies > #YLN.active > polygon, #constituencies > #YLN.active > path {
-  fill: red; }
-#constituencies > #CYC:hover, #constituencies > #CYC:hover > polygon, #constituencies > #CYC:hover > path {
-  fill: lime; }
-#constituencies > #CYC.active, #constituencies > #CYC.active > polygon, #constituencies > #CYC.active > path {
-  fill: red; }
-#constituencies > #CYI:hover, #constituencies > #CYI:hover > polygon, #constituencies > #CYI:hover > path {
-  fill: lime; }
-#constituencies > #CYI.active, #constituencies > #CYI.active > polygon, #constituencies > #CYI.active > path {
-  fill: red; }
-#constituencies > #TNN:hover, #constituencies > #TNN:hover > polygon, #constituencies > #TNN:hover > path {
-  fill: lime; }
-#constituencies > #TNN.active, #constituencies > #TNN.active > polygon, #constituencies > #TNN.active > path {
-  fill: red; }
-#constituencies > #KHH:hover, #constituencies > #KHH:hover > polygon, #constituencies > #KHH:hover > path {
-  fill: lime; }
-#constituencies > #KHH.active, #constituencies > #KHH.active > polygon, #constituencies > #KHH.active > path {
-  fill: red; }
-#constituencies > #PIF:hover, #constituencies > #PIF:hover > polygon, #constituencies > #PIF:hover > path {
-  fill: lime; }
-#constituencies > #PIF.active, #constituencies > #PIF.active > polygon, #constituencies > #PIF.active > path {
-  fill: red; }
-#constituencies > #ILA:hover, #constituencies > #ILA:hover > polygon, #constituencies > #ILA:hover > path {
-  fill: lime; }
-#constituencies > #ILA.active, #constituencies > #ILA.active > polygon, #constituencies > #ILA.active > path {
-  fill: red; }
-#constituencies > #HUN:hover, #constituencies > #HUN:hover > polygon, #constituencies > #HUN:hover > path {
-  fill: lime; }
-#constituencies > #HUN.active, #constituencies > #HUN.active > polygon, #constituencies > #HUN.active > path {
-  fill: red; }
-#constituencies > #TTT:hover, #constituencies > #TTT:hover > polygon, #constituencies > #TTT:hover > path {
-  fill: lime; }
-#constituencies > #TTT.active, #constituencies > #TTT.active > polygon, #constituencies > #TTT.active > path {
-  fill: red; }
-#constituencies > #MZG:hover, #constituencies > #MZG:hover > polygon, #constituencies > #MZG:hover > path {
-  fill: lime; }
-#constituencies > #MZG.active, #constituencies > #MZG.active > polygon, #constituencies > #MZG.active > path {
-  fill: red; }
-#constituencies > #KNH:hover, #constituencies > #KNH:hover > polygon, #constituencies > #KNH:hover > path {
-  fill: lime; }
-#constituencies > #KNH.active, #constituencies > #KNH.active > polygon, #constituencies > #KNH.active > path {
-  fill: red; }
-#constituencies > #MFK:hover, #constituencies > #MFK:hover > polygon, #constituencies > #MFK:hover > path {
-  fill: lime; }
-#constituencies > #MFK.active, #constituencies > #MFK.active > polygon, #constituencies > #MFK.active > path {
-  fill: red; }
-#constituencies > #LAB:hover > rect, #constituencies > #MAB:hover > rect {
-  fill: lime; }
+#constituencies {
+  /*> #LAB, > #MAB {
+    cursor: pointer;
+    > rect {
+      fill: $inactiveColor;
+    }
+    &:hover > rect {
+      fill: $hoverColor;
+    }
+  }*/ }
+  #constituencies > #TPE {
+    cursor: pointer; }
+    #constituencies > #TPE > #TPE-name {
+      display: none; }
+    #constituencies > #TPE > polygon, #constituencies > #TPE > path, #constituencies > #TPE > polyline {
+      fill: #aaa; }
+  #constituencies > #TPE:hover > polygon, #constituencies > #TPE:hover > path, #constituencies > #TPE:hover > polyline {
+    fill: white; }
+  #constituencies > #TPE:hover > #TPE-name {
+    display: block;
+    fill: black; }
+  #constituencies > #TPE.active > polygon, #constituencies > #TPE.active > path, #constituencies > #TPE.active > polyline {
+    fill: white; }
+  #constituencies > #NTC {
+    cursor: pointer; }
+    #constituencies > #NTC > #NTC-name {
+      display: none; }
+    #constituencies > #NTC > polygon, #constituencies > #NTC > path, #constituencies > #NTC > polyline {
+      fill: #aaa; }
+  #constituencies > #NTC:hover > polygon, #constituencies > #NTC:hover > path, #constituencies > #NTC:hover > polyline {
+    fill: white; }
+  #constituencies > #NTC:hover > #NTC-name {
+    display: block;
+    fill: black; }
+  #constituencies > #NTC.active > polygon, #constituencies > #NTC.active > path, #constituencies > #NTC.active > polyline {
+    fill: white; }
+  #constituencies > #KEL {
+    cursor: pointer; }
+    #constituencies > #KEL > #KEL-name {
+      display: none; }
+    #constituencies > #KEL > polygon, #constituencies > #KEL > path, #constituencies > #KEL > polyline {
+      fill: #aaa; }
+  #constituencies > #KEL:hover > polygon, #constituencies > #KEL:hover > path, #constituencies > #KEL:hover > polyline {
+    fill: white; }
+  #constituencies > #KEL:hover > #KEL-name {
+    display: block;
+    fill: black; }
+  #constituencies > #KEL.active > polygon, #constituencies > #KEL.active > path, #constituencies > #KEL.active > polyline {
+    fill: white; }
+  #constituencies > #TYN {
+    cursor: pointer; }
+    #constituencies > #TYN > #TYN-name {
+      display: none; }
+    #constituencies > #TYN > polygon, #constituencies > #TYN > path, #constituencies > #TYN > polyline {
+      fill: #aaa; }
+  #constituencies > #TYN:hover > polygon, #constituencies > #TYN:hover > path, #constituencies > #TYN:hover > polyline {
+    fill: white; }
+  #constituencies > #TYN:hover > #TYN-name {
+    display: block;
+    fill: black; }
+  #constituencies > #TYN.active > polygon, #constituencies > #TYN.active > path, #constituencies > #TYN.active > polyline {
+    fill: white; }
+  #constituencies > #HCC {
+    cursor: pointer; }
+    #constituencies > #HCC > #HCC-name {
+      display: none; }
+    #constituencies > #HCC > polygon, #constituencies > #HCC > path, #constituencies > #HCC > polyline {
+      fill: #aaa; }
+  #constituencies > #HCC:hover > polygon, #constituencies > #HCC:hover > path, #constituencies > #HCC:hover > polyline {
+    fill: white; }
+  #constituencies > #HCC:hover > #HCC-name {
+    display: block;
+    fill: black; }
+  #constituencies > #HCC.active > polygon, #constituencies > #HCC.active > path, #constituencies > #HCC.active > polyline {
+    fill: white; }
+  #constituencies > #HSZ {
+    cursor: pointer; }
+    #constituencies > #HSZ > #HSZ-name {
+      display: none; }
+    #constituencies > #HSZ > polygon, #constituencies > #HSZ > path, #constituencies > #HSZ > polyline {
+      fill: #aaa; }
+  #constituencies > #HSZ:hover > polygon, #constituencies > #HSZ:hover > path, #constituencies > #HSZ:hover > polyline {
+    fill: white; }
+  #constituencies > #HSZ:hover > #HSZ-name {
+    display: block;
+    fill: black; }
+  #constituencies > #HSZ.active > polygon, #constituencies > #HSZ.active > path, #constituencies > #HSZ.active > polyline {
+    fill: white; }
+  #constituencies > #ZMI {
+    cursor: pointer; }
+    #constituencies > #ZMI > #ZMI-name {
+      display: none; }
+    #constituencies > #ZMI > polygon, #constituencies > #ZMI > path, #constituencies > #ZMI > polyline {
+      fill: #aaa; }
+  #constituencies > #ZMI:hover > polygon, #constituencies > #ZMI:hover > path, #constituencies > #ZMI:hover > polyline {
+    fill: white; }
+  #constituencies > #ZMI:hover > #ZMI-name {
+    display: block;
+    fill: black; }
+  #constituencies > #ZMI.active > polygon, #constituencies > #ZMI.active > path, #constituencies > #ZMI.active > polyline {
+    fill: white; }
+  #constituencies > #TXG {
+    cursor: pointer; }
+    #constituencies > #TXG > #TXG-name {
+      display: none; }
+    #constituencies > #TXG > polygon, #constituencies > #TXG > path, #constituencies > #TXG > polyline {
+      fill: #aaa; }
+  #constituencies > #TXG:hover > polygon, #constituencies > #TXG:hover > path, #constituencies > #TXG:hover > polyline {
+    fill: white; }
+  #constituencies > #TXG:hover > #TXG-name {
+    display: block;
+    fill: black; }
+  #constituencies > #TXG.active > polygon, #constituencies > #TXG.active > path, #constituencies > #TXG.active > polyline {
+    fill: white; }
+  #constituencies > #CHW {
+    cursor: pointer; }
+    #constituencies > #CHW > #CHW-name {
+      display: none; }
+    #constituencies > #CHW > polygon, #constituencies > #CHW > path, #constituencies > #CHW > polyline {
+      fill: #aaa; }
+  #constituencies > #CHW:hover > polygon, #constituencies > #CHW:hover > path, #constituencies > #CHW:hover > polyline {
+    fill: white; }
+  #constituencies > #CHW:hover > #CHW-name {
+    display: block;
+    fill: black; }
+  #constituencies > #CHW.active > polygon, #constituencies > #CHW.active > path, #constituencies > #CHW.active > polyline {
+    fill: white; }
+  #constituencies > #NAN {
+    cursor: pointer; }
+    #constituencies > #NAN > #NAN-name {
+      display: none; }
+    #constituencies > #NAN > polygon, #constituencies > #NAN > path, #constituencies > #NAN > polyline {
+      fill: #aaa; }
+  #constituencies > #NAN:hover > polygon, #constituencies > #NAN:hover > path, #constituencies > #NAN:hover > polyline {
+    fill: white; }
+  #constituencies > #NAN:hover > #NAN-name {
+    display: block;
+    fill: black; }
+  #constituencies > #NAN.active > polygon, #constituencies > #NAN.active > path, #constituencies > #NAN.active > polyline {
+    fill: white; }
+  #constituencies > #YLN {
+    cursor: pointer; }
+    #constituencies > #YLN > #YLN-name {
+      display: none; }
+    #constituencies > #YLN > polygon, #constituencies > #YLN > path, #constituencies > #YLN > polyline {
+      fill: #aaa; }
+  #constituencies > #YLN:hover > polygon, #constituencies > #YLN:hover > path, #constituencies > #YLN:hover > polyline {
+    fill: white; }
+  #constituencies > #YLN:hover > #YLN-name {
+    display: block;
+    fill: black; }
+  #constituencies > #YLN.active > polygon, #constituencies > #YLN.active > path, #constituencies > #YLN.active > polyline {
+    fill: white; }
+  #constituencies > #CYC {
+    cursor: pointer; }
+    #constituencies > #CYC > #CYC-name {
+      display: none; }
+    #constituencies > #CYC > polygon, #constituencies > #CYC > path, #constituencies > #CYC > polyline {
+      fill: #aaa; }
+  #constituencies > #CYC:hover > polygon, #constituencies > #CYC:hover > path, #constituencies > #CYC:hover > polyline {
+    fill: white; }
+  #constituencies > #CYC:hover > #CYC-name {
+    display: block;
+    fill: black; }
+  #constituencies > #CYC.active > polygon, #constituencies > #CYC.active > path, #constituencies > #CYC.active > polyline {
+    fill: white; }
+  #constituencies > #CYI {
+    cursor: pointer; }
+    #constituencies > #CYI > #CYI-name {
+      display: none; }
+    #constituencies > #CYI > polygon, #constituencies > #CYI > path, #constituencies > #CYI > polyline {
+      fill: #aaa; }
+  #constituencies > #CYI:hover > polygon, #constituencies > #CYI:hover > path, #constituencies > #CYI:hover > polyline {
+    fill: white; }
+  #constituencies > #CYI:hover > #CYI-name {
+    display: block;
+    fill: black; }
+  #constituencies > #CYI.active > polygon, #constituencies > #CYI.active > path, #constituencies > #CYI.active > polyline {
+    fill: white; }
+  #constituencies > #TNN {
+    cursor: pointer; }
+    #constituencies > #TNN > #TNN-name {
+      display: none; }
+    #constituencies > #TNN > polygon, #constituencies > #TNN > path, #constituencies > #TNN > polyline {
+      fill: #aaa; }
+  #constituencies > #TNN:hover > polygon, #constituencies > #TNN:hover > path, #constituencies > #TNN:hover > polyline {
+    fill: white; }
+  #constituencies > #TNN:hover > #TNN-name {
+    display: block;
+    fill: black; }
+  #constituencies > #TNN.active > polygon, #constituencies > #TNN.active > path, #constituencies > #TNN.active > polyline {
+    fill: white; }
+  #constituencies > #KHH {
+    cursor: pointer; }
+    #constituencies > #KHH > #KHH-name {
+      display: none; }
+    #constituencies > #KHH > polygon, #constituencies > #KHH > path, #constituencies > #KHH > polyline {
+      fill: #aaa; }
+  #constituencies > #KHH:hover > polygon, #constituencies > #KHH:hover > path, #constituencies > #KHH:hover > polyline {
+    fill: white; }
+  #constituencies > #KHH:hover > #KHH-name {
+    display: block;
+    fill: black; }
+  #constituencies > #KHH.active > polygon, #constituencies > #KHH.active > path, #constituencies > #KHH.active > polyline {
+    fill: white; }
+  #constituencies > #PIF {
+    cursor: pointer; }
+    #constituencies > #PIF > #PIF-name {
+      display: none; }
+    #constituencies > #PIF > polygon, #constituencies > #PIF > path, #constituencies > #PIF > polyline {
+      fill: #aaa; }
+  #constituencies > #PIF:hover > polygon, #constituencies > #PIF:hover > path, #constituencies > #PIF:hover > polyline {
+    fill: white; }
+  #constituencies > #PIF:hover > #PIF-name {
+    display: block;
+    fill: black; }
+  #constituencies > #PIF.active > polygon, #constituencies > #PIF.active > path, #constituencies > #PIF.active > polyline {
+    fill: white; }
+  #constituencies > #ILA {
+    cursor: pointer; }
+    #constituencies > #ILA > #ILA-name {
+      display: none; }
+    #constituencies > #ILA > polygon, #constituencies > #ILA > path, #constituencies > #ILA > polyline {
+      fill: #aaa; }
+  #constituencies > #ILA:hover > polygon, #constituencies > #ILA:hover > path, #constituencies > #ILA:hover > polyline {
+    fill: white; }
+  #constituencies > #ILA:hover > #ILA-name {
+    display: block;
+    fill: black; }
+  #constituencies > #ILA.active > polygon, #constituencies > #ILA.active > path, #constituencies > #ILA.active > polyline {
+    fill: white; }
+  #constituencies > #HUN {
+    cursor: pointer; }
+    #constituencies > #HUN > #HUN-name {
+      display: none; }
+    #constituencies > #HUN > polygon, #constituencies > #HUN > path, #constituencies > #HUN > polyline {
+      fill: #aaa; }
+  #constituencies > #HUN:hover > polygon, #constituencies > #HUN:hover > path, #constituencies > #HUN:hover > polyline {
+    fill: white; }
+  #constituencies > #HUN:hover > #HUN-name {
+    display: block;
+    fill: black; }
+  #constituencies > #HUN.active > polygon, #constituencies > #HUN.active > path, #constituencies > #HUN.active > polyline {
+    fill: white; }
+  #constituencies > #TTT {
+    cursor: pointer; }
+    #constituencies > #TTT > #TTT-name {
+      display: none; }
+    #constituencies > #TTT > polygon, #constituencies > #TTT > path, #constituencies > #TTT > polyline {
+      fill: #aaa; }
+  #constituencies > #TTT:hover > polygon, #constituencies > #TTT:hover > path, #constituencies > #TTT:hover > polyline {
+    fill: white; }
+  #constituencies > #TTT:hover > #TTT-name {
+    display: block;
+    fill: black; }
+  #constituencies > #TTT.active > polygon, #constituencies > #TTT.active > path, #constituencies > #TTT.active > polyline {
+    fill: white; }
+  #constituencies > #MZG {
+    cursor: pointer; }
+    #constituencies > #MZG > #MZG-name {
+      display: none; }
+    #constituencies > #MZG > polygon, #constituencies > #MZG > path, #constituencies > #MZG > polyline {
+      fill: #aaa; }
+  #constituencies > #MZG:hover > polygon, #constituencies > #MZG:hover > path, #constituencies > #MZG:hover > polyline {
+    fill: white; }
+  #constituencies > #MZG:hover > #MZG-name {
+    display: block;
+    fill: black; }
+  #constituencies > #MZG.active > polygon, #constituencies > #MZG.active > path, #constituencies > #MZG.active > polyline {
+    fill: white; }
+  #constituencies > #KNH {
+    cursor: pointer; }
+    #constituencies > #KNH > #KNH-name {
+      display: none; }
+    #constituencies > #KNH > polygon, #constituencies > #KNH > path, #constituencies > #KNH > polyline {
+      fill: #aaa; }
+  #constituencies > #KNH:hover > polygon, #constituencies > #KNH:hover > path, #constituencies > #KNH:hover > polyline {
+    fill: white; }
+  #constituencies > #KNH:hover > #KNH-name {
+    display: block;
+    fill: black; }
+  #constituencies > #KNH.active > polygon, #constituencies > #KNH.active > path, #constituencies > #KNH.active > polyline {
+    fill: white; }
+  #constituencies > #MFK {
+    cursor: pointer; }
+    #constituencies > #MFK > #MFK-name {
+      display: none; }
+    #constituencies > #MFK > polygon, #constituencies > #MFK > path, #constituencies > #MFK > polyline {
+      fill: #aaa; }
+  #constituencies > #MFK:hover > polygon, #constituencies > #MFK:hover > path, #constituencies > #MFK:hover > polyline {
+    fill: white; }
+  #constituencies > #MFK:hover > #MFK-name {
+    display: block;
+    fill: black; }
+  #constituencies > #MFK.active > polygon, #constituencies > #MFK.active > path, #constituencies > #MFK.active > polyline {
+    fill: white; }
+  #constituencies > #LAB {
+    cursor: pointer; }
+    #constituencies > #LAB > #LAB-name {
+      display: none; }
+    #constituencies > #LAB > polygon, #constituencies > #LAB > path, #constituencies > #LAB > polyline {
+      fill: #aaa; }
+  #constituencies > #LAB:hover > polygon, #constituencies > #LAB:hover > path, #constituencies > #LAB:hover > polyline {
+    fill: white; }
+  #constituencies > #LAB:hover > #LAB-name {
+    display: block;
+    fill: black; }
+  #constituencies > #LAB.active > polygon, #constituencies > #LAB.active > path, #constituencies > #LAB.active > polyline {
+    fill: white; }
+  #constituencies > #MAB {
+    cursor: pointer; }
+    #constituencies > #MAB > #MAB-name {
+      display: none; }
+    #constituencies > #MAB > polygon, #constituencies > #MAB > path, #constituencies > #MAB > polyline {
+      fill: #aaa; }
+  #constituencies > #MAB:hover > polygon, #constituencies > #MAB:hover > path, #constituencies > #MAB:hover > polyline {
+    fill: white; }
+  #constituencies > #MAB:hover > #MAB-name {
+    display: block;
+    fill: black; }
+  #constituencies > #MAB.active > polygon, #constituencies > #MAB.active > path, #constituencies > #MAB.active > polyline {
+    fill: white; }
 
 #mapEach {
   display: none;
@@ -128,22 +360,124 @@ svg {
   #mapEach > .city {
     display: none; }
 
+#TPE > [id^=TPE] {
+  cursor: pointer; }
 #TPE > [id^=TPE]:hover, #TPE a:hover > polygon {
   fill: lime; }
 
+#NTC > [id^=NTC] {
+  cursor: pointer; }
 #NTC > [id^=NTC]:hover, #NTC a:hover > polygon {
   fill: lime; }
 
+#KEL > [id^=KEL] {
+  cursor: pointer; }
+#KEL > [id^=KEL]:hover, #KEL a:hover > polygon {
+  fill: lime; }
+
+#TYN > [id^=TYN] {
+  cursor: pointer; }
 #TYN > [id^=TYN]:hover, #TYN a:hover > polygon {
   fill: lime; }
 
+#HCC > [id^=HCC] {
+  cursor: pointer; }
 #HCC > [id^=HCC]:hover, #HCC a:hover > polygon {
   fill: lime; }
 
+#HSZ > [id^=HSZ] {
+  cursor: pointer; }
 #HSZ > [id^=HSZ]:hover, #HSZ a:hover > polygon {
   fill: lime; }
 
+#ZMI > [id^=ZMI] {
+  cursor: pointer; }
 #ZMI > [id^=ZMI]:hover, #ZMI a:hover > polygon {
+  fill: lime; }
+
+#TXG > [id^=TXG] {
+  cursor: pointer; }
+#TXG > [id^=TXG]:hover, #TXG a:hover > polygon {
+  fill: lime; }
+
+#CHW > [id^=CHW] {
+  cursor: pointer; }
+#CHW > [id^=CHW]:hover, #CHW a:hover > polygon {
+  fill: lime; }
+
+#NAN > [id^=NAN] {
+  cursor: pointer; }
+#NAN > [id^=NAN]:hover, #NAN a:hover > polygon {
+  fill: lime; }
+
+#YLN > [id^=YLN] {
+  cursor: pointer; }
+#YLN > [id^=YLN]:hover, #YLN a:hover > polygon {
+  fill: lime; }
+
+#CYC > [id^=CYC] {
+  cursor: pointer; }
+#CYC > [id^=CYC]:hover, #CYC a:hover > polygon {
+  fill: lime; }
+
+#CYI > [id^=CYI] {
+  cursor: pointer; }
+#CYI > [id^=CYI]:hover, #CYI a:hover > polygon {
+  fill: lime; }
+
+#TNN > [id^=TNN] {
+  cursor: pointer; }
+#TNN > [id^=TNN]:hover, #TNN a:hover > polygon {
+  fill: lime; }
+
+#KHH > [id^=KHH] {
+  cursor: pointer; }
+#KHH > [id^=KHH]:hover, #KHH a:hover > polygon {
+  fill: lime; }
+
+#PIF > [id^=PIF] {
+  cursor: pointer; }
+#PIF > [id^=PIF]:hover, #PIF a:hover > polygon {
+  fill: lime; }
+
+#ILA > [id^=ILA] {
+  cursor: pointer; }
+#ILA > [id^=ILA]:hover, #ILA a:hover > polygon {
+  fill: lime; }
+
+#HUN > [id^=HUN] {
+  cursor: pointer; }
+#HUN > [id^=HUN]:hover, #HUN a:hover > polygon {
+  fill: lime; }
+
+#TTT > [id^=TTT] {
+  cursor: pointer; }
+#TTT > [id^=TTT]:hover, #TTT a:hover > polygon {
+  fill: lime; }
+
+#MZG > [id^=MZG] {
+  cursor: pointer; }
+#MZG > [id^=MZG]:hover, #MZG a:hover > polygon {
+  fill: lime; }
+
+#KNH > [id^=KNH] {
+  cursor: pointer; }
+#KNH > [id^=KNH]:hover, #KNH a:hover > polygon {
+  fill: lime; }
+
+#MFK > [id^=MFK] {
+  cursor: pointer; }
+#MFK > [id^=MFK]:hover, #MFK a:hover > polygon {
+  fill: lime; }
+
+#LAB > [id^=LAB] {
+  cursor: pointer; }
+#LAB > [id^=LAB]:hover, #LAB a:hover > polygon {
+  fill: lime; }
+
+#MAB > [id^=MAB] {
+  cursor: pointer; }
+#MAB > [id^=MAB]:hover, #MAB a:hover > polygon {
   fill: lime; }
 
 /*# sourceMappingURL=styles.css.map */
