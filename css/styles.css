@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+svg {
+  display: block;
+  width: 800px;
+  margin: 0 auto; }
+
+#constituencies > #TPE:hover, #constituencies > #TPE:hover > polygon, #constituencies > #TPE:hover > path {
+  fill: lime; }
+#constituencies > #NTC:hover, #constituencies > #NTC:hover > polygon, #constituencies > #NTC:hover > path {
+  fill: lime; }
+#constituencies > #KEL:hover, #constituencies > #KEL:hover > polygon, #constituencies > #KEL:hover > path {
+  fill: lime; }
+#constituencies > #TYN:hover, #constituencies > #TYN:hover > polygon, #constituencies > #TYN:hover > path {
+  fill: lime; }
+#constituencies > #HCC:hover, #constituencies > #HCC:hover > polygon, #constituencies > #HCC:hover > path {
+  fill: lime; }
+#constituencies > #HSZ:hover, #constituencies > #HSZ:hover > polygon, #constituencies > #HSZ:hover > path {
+  fill: lime; }
+#constituencies > #ZMI:hover, #constituencies > #ZMI:hover > polygon, #constituencies > #ZMI:hover > path {
+  fill: lime; }
+#constituencies > #TXG:hover, #constituencies > #TXG:hover > polygon, #constituencies > #TXG:hover > path {
+  fill: lime; }
+#constituencies > #CHW:hover, #constituencies > #CHW:hover > polygon, #constituencies > #CHW:hover > path {
+  fill: lime; }
+#constituencies > #NAN:hover, #constituencies > #NAN:hover > polygon, #constituencies > #NAN:hover > path {
+  fill: lime; }
+#constituencies > #YLN:hover, #constituencies > #YLN:hover > polygon, #constituencies > #YLN:hover > path {
+  fill: lime; }
+#constituencies > #CYC:hover, #constituencies > #CYC:hover > polygon, #constituencies > #CYC:hover > path {
+  fill: lime; }
+#constituencies > #CYI:hover, #constituencies > #CYI:hover > polygon, #constituencies > #CYI:hover > path {
+  fill: lime; }
+#constituencies > #TNN:hover, #constituencies > #TNN:hover > polygon, #constituencies > #TNN:hover > path {
+  fill: lime; }
+#constituencies > #KHH:hover, #constituencies > #KHH:hover > polygon, #constituencies > #KHH:hover > path {
+  fill: lime; }
+#constituencies > #PIF:hover, #constituencies > #PIF:hover > polygon, #constituencies > #PIF:hover > path {
+  fill: lime; }
+#constituencies > #ILA:hover, #constituencies > #ILA:hover > polygon, #constituencies > #ILA:hover > path {
+  fill: lime; }
+#constituencies > #HUN:hover, #constituencies > #HUN:hover > polygon, #constituencies > #HUN:hover > path {
+  fill: lime; }
+#constituencies > #TTT:hover, #constituencies > #TTT:hover > polygon, #constituencies > #TTT:hover > path {
+  fill: lime; }
+#constituencies > #MZG:hover, #constituencies > #MZG:hover > polygon, #constituencies > #MZG:hover > path {
+  fill: lime; }
+#constituencies > #KNH:hover, #constituencies > #KNH:hover > polygon, #constituencies > #KNH:hover > path {
+  fill: lime; }
+#constituencies > #MFK:hover, #constituencies > #MFK:hover > polygon, #constituencies > #MFK:hover > path {
+  fill: lime; }
+#constituencies > #LAB:hover > rect, #constituencies > #MAB:hover > rect {
+  fill: lime; }
+
+/*# sourceMappingURL=styles.css.map */

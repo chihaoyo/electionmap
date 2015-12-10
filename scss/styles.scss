@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+svg {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+$constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK;//,LAB,MAB;
+#constituencies {
+  @each $c in $constituencies {
+    > ##{$c}:hover {
+      &, & > polygon, & > path {
+        fill: lime;
+      }
+    }
+  }
+  > #LAB, > #MAB {
+    &:hover > rect {
+      fill: lime;
+    }
+  }
+}
