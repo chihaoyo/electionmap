@@ -67,16 +67,18 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
   }
   > #info {
     display: none;
-    width: 200px;
+    width: 240px;
     margin: 40px auto;
     padding: 10px 20px;
     background: white;
     color: $textColor;
 
     > #name {
+      margin: 14px 0;
       font-size: 18px;
     }
     > #detail {
+      margin: 14px 0;
       font-size: 14px;
     }
   }
