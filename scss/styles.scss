@@ -5,9 +5,10 @@ body {
 }
 svg {
   display: block;
-  width: 800px;
   margin: 0 auto;
 }
+
+// map
 $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK;//,LAB,MAB;
 #constituencies {
   @each $c in $constituencies {
@@ -16,9 +17,63 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
         fill: lime;
       }
     }
+    > ##{$c}.active {
+      &, &> polygon, & > path {
+        fill: red;
+      }
+    }
   }
   > #LAB, > #MAB {
     &:hover > rect {
+      fill: lime;
+    }
+  }
+}
+
+// map-each
+#mapEach {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.32);
+
+  > #close {
+    width: 64px;
+    height: 64px;
+    margin: 64px auto;
+    position: relative;
+    background: yellow;
+    cursor: pointer;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: black;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 0;
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+  > .city {
+    display: none;
+  }
+}
+
+$cities: TPE,NTC,TYN,HCC,HSZ,ZMI;
+@each $c in $cities {
+  ##{$c} {
+    > [id^=#{$c}]:hover, a:hover > polygon {
       fill: lime;
     }
   }

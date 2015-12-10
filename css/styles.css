@@ -5,54 +5,145 @@ body {
 
 svg {
   display: block;
-  width: 800px;
   margin: 0 auto; }
 
 #constituencies > #TPE:hover, #constituencies > #TPE:hover > polygon, #constituencies > #TPE:hover > path {
   fill: lime; }
+#constituencies > #TPE.active, #constituencies > #TPE.active > polygon, #constituencies > #TPE.active > path {
+  fill: red; }
 #constituencies > #NTC:hover, #constituencies > #NTC:hover > polygon, #constituencies > #NTC:hover > path {
   fill: lime; }
+#constituencies > #NTC.active, #constituencies > #NTC.active > polygon, #constituencies > #NTC.active > path {
+  fill: red; }
 #constituencies > #KEL:hover, #constituencies > #KEL:hover > polygon, #constituencies > #KEL:hover > path {
   fill: lime; }
+#constituencies > #KEL.active, #constituencies > #KEL.active > polygon, #constituencies > #KEL.active > path {
+  fill: red; }
 #constituencies > #TYN:hover, #constituencies > #TYN:hover > polygon, #constituencies > #TYN:hover > path {
   fill: lime; }
+#constituencies > #TYN.active, #constituencies > #TYN.active > polygon, #constituencies > #TYN.active > path {
+  fill: red; }
 #constituencies > #HCC:hover, #constituencies > #HCC:hover > polygon, #constituencies > #HCC:hover > path {
   fill: lime; }
+#constituencies > #HCC.active, #constituencies > #HCC.active > polygon, #constituencies > #HCC.active > path {
+  fill: red; }
 #constituencies > #HSZ:hover, #constituencies > #HSZ:hover > polygon, #constituencies > #HSZ:hover > path {
   fill: lime; }
+#constituencies > #HSZ.active, #constituencies > #HSZ.active > polygon, #constituencies > #HSZ.active > path {
+  fill: red; }
 #constituencies > #ZMI:hover, #constituencies > #ZMI:hover > polygon, #constituencies > #ZMI:hover > path {
   fill: lime; }
+#constituencies > #ZMI.active, #constituencies > #ZMI.active > polygon, #constituencies > #ZMI.active > path {
+  fill: red; }
 #constituencies > #TXG:hover, #constituencies > #TXG:hover > polygon, #constituencies > #TXG:hover > path {
   fill: lime; }
+#constituencies > #TXG.active, #constituencies > #TXG.active > polygon, #constituencies > #TXG.active > path {
+  fill: red; }
 #constituencies > #CHW:hover, #constituencies > #CHW:hover > polygon, #constituencies > #CHW:hover > path {
   fill: lime; }
+#constituencies > #CHW.active, #constituencies > #CHW.active > polygon, #constituencies > #CHW.active > path {
+  fill: red; }
 #constituencies > #NAN:hover, #constituencies > #NAN:hover > polygon, #constituencies > #NAN:hover > path {
   fill: lime; }
+#constituencies > #NAN.active, #constituencies > #NAN.active > polygon, #constituencies > #NAN.active > path {
+  fill: red; }
 #constituencies > #YLN:hover, #constituencies > #YLN:hover > polygon, #constituencies > #YLN:hover > path {
   fill: lime; }
+#constituencies > #YLN.active, #constituencies > #YLN.active > polygon, #constituencies > #YLN.active > path {
+  fill: red; }
 #constituencies > #CYC:hover, #constituencies > #CYC:hover > polygon, #constituencies > #CYC:hover > path {
   fill: lime; }
+#constituencies > #CYC.active, #constituencies > #CYC.active > polygon, #constituencies > #CYC.active > path {
+  fill: red; }
 #constituencies > #CYI:hover, #constituencies > #CYI:hover > polygon, #constituencies > #CYI:hover > path {
   fill: lime; }
+#constituencies > #CYI.active, #constituencies > #CYI.active > polygon, #constituencies > #CYI.active > path {
+  fill: red; }
 #constituencies > #TNN:hover, #constituencies > #TNN:hover > polygon, #constituencies > #TNN:hover > path {
   fill: lime; }
+#constituencies > #TNN.active, #constituencies > #TNN.active > polygon, #constituencies > #TNN.active > path {
+  fill: red; }
 #constituencies > #KHH:hover, #constituencies > #KHH:hover > polygon, #constituencies > #KHH:hover > path {
   fill: lime; }
+#constituencies > #KHH.active, #constituencies > #KHH.active > polygon, #constituencies > #KHH.active > path {
+  fill: red; }
 #constituencies > #PIF:hover, #constituencies > #PIF:hover > polygon, #constituencies > #PIF:hover > path {
   fill: lime; }
+#constituencies > #PIF.active, #constituencies > #PIF.active > polygon, #constituencies > #PIF.active > path {
+  fill: red; }
 #constituencies > #ILA:hover, #constituencies > #ILA:hover > polygon, #constituencies > #ILA:hover > path {
   fill: lime; }
+#constituencies > #ILA.active, #constituencies > #ILA.active > polygon, #constituencies > #ILA.active > path {
+  fill: red; }
 #constituencies > #HUN:hover, #constituencies > #HUN:hover > polygon, #constituencies > #HUN:hover > path {
   fill: lime; }
+#constituencies > #HUN.active, #constituencies > #HUN.active > polygon, #constituencies > #HUN.active > path {
+  fill: red; }
 #constituencies > #TTT:hover, #constituencies > #TTT:hover > polygon, #constituencies > #TTT:hover > path {
   fill: lime; }
+#constituencies > #TTT.active, #constituencies > #TTT.active > polygon, #constituencies > #TTT.active > path {
+  fill: red; }
 #constituencies > #MZG:hover, #constituencies > #MZG:hover > polygon, #constituencies > #MZG:hover > path {
   fill: lime; }
+#constituencies > #MZG.active, #constituencies > #MZG.active > polygon, #constituencies > #MZG.active > path {
+  fill: red; }
 #constituencies > #KNH:hover, #constituencies > #KNH:hover > polygon, #constituencies > #KNH:hover > path {
   fill: lime; }
+#constituencies > #KNH.active, #constituencies > #KNH.active > polygon, #constituencies > #KNH.active > path {
+  fill: red; }
 #constituencies > #MFK:hover, #constituencies > #MFK:hover > polygon, #constituencies > #MFK:hover > path {
   fill: lime; }
+#constituencies > #MFK.active, #constituencies > #MFK.active > polygon, #constituencies > #MFK.active > path {
+  fill: red; }
 #constituencies > #LAB:hover > rect, #constituencies > #MAB:hover > rect {
+  fill: lime; }
+
+#mapEach {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.32); }
+  #mapEach > #close {
+    width: 64px;
+    height: 64px;
+    margin: 64px auto;
+    position: relative;
+    background: yellow;
+    cursor: pointer; }
+    #mapEach > #close:before, #mapEach > #close:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: black;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 0;
+      transform: rotate(45deg); }
+    #mapEach > #close:after {
+      transform: rotate(-45deg); }
+  #mapEach > .city {
+    display: none; }
+
+#TPE > [id^=TPE]:hover, #TPE a:hover > polygon {
+  fill: lime; }
+
+#NTC > [id^=NTC]:hover, #NTC a:hover > polygon {
+  fill: lime; }
+
+#TYN > [id^=TYN]:hover, #TYN a:hover > polygon {
+  fill: lime; }
+
+#HCC > [id^=HCC]:hover, #HCC a:hover > polygon {
+  fill: lime; }
+
+#HSZ > [id^=HSZ]:hover, #HSZ a:hover > polygon {
+  fill: lime; }
+
+#ZMI > [id^=ZMI]:hover, #ZMI a:hover > polygon {
   fill: lime; }
 
 /*# sourceMappingURL=styles.css.map */
