@@ -338,12 +338,14 @@ svg {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.32); }
+  #mapEach > .city {
+    display: none; }
   #mapEach > #close {
     width: 64px;
     height: 64px;
     margin: 64px auto;
     position: relative;
-    background: yellow;
+    background: white;
     cursor: pointer; }
     #mapEach > #close:before, #mapEach > #close:after {
       content: '';
@@ -357,8 +359,6 @@ svg {
       transform: rotate(45deg); }
     #mapEach > #close:after {
       transform: rotate(-45deg); }
-  #mapEach > .city {
-    display: none; }
 
 #TPE > [id^=TPE] {
   cursor: pointer; }
