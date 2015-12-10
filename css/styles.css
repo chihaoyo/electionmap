@@ -347,6 +347,8 @@ svg {
     position: relative;
     background: white;
     cursor: pointer; }
+    #mapEach > #close:hover {
+      background: lime; }
     #mapEach > #close:before, #mapEach > #close:after {
       content: '';
       display: block;

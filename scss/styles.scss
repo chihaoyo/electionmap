@@ -71,6 +71,9 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
     background: $hoverColor;
     cursor: pointer;
 
+    &:hover {
+      background: $selectColor;
+    }
     &:before, &:after {
       content: '';
       display: block;
