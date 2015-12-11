@@ -333,8 +333,10 @@ svg {
     display: none; }
   #citymap > #district-info {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 40px auto;
     padding: 10px 20px;
     background: white;
     color: black; }
@@ -355,12 +357,14 @@ svg {
         vertical-align: top;
         margin-right: 1em; }
   #citymap > #close {
-    width: 32px;
-    height: 32px;
-    margin: 32px auto;
+    width: 64px;
+    height: 64px;
+    margin: 64px auto;
     position: relative;
     background: white;
     cursor: pointer; }
+    #citymap > #close.inactive {
+      background: #aaa; }
     #citymap > #close:hover {
       background: lime; }
     #citymap > #close:before, #citymap > #close:after {
@@ -375,99 +379,99 @@ svg {
       transform: rotate(45deg); }
     #citymap > #close:after {
       transform: rotate(-45deg); }
-  #citymap #TPE > [id^=TPE] {
+  #citymap #TPE > [id^=TPE]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TPE > [id^=TPE]:hover > polygon, #citymap #TPE > [id^=TPE]:hover > path, #citymap #TPE > [id^=TPE]:hover > polyline {
     fill: lime; }
-  #citymap #NTC > [id^=NTC] {
+  #citymap #NTC > [id^=NTC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #NTC > [id^=NTC]:hover > polygon, #citymap #NTC > [id^=NTC]:hover > path, #citymap #NTC > [id^=NTC]:hover > polyline {
     fill: lime; }
-  #citymap #KEL > [id^=KEL] {
+  #citymap #KEL > [id^=KEL]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KEL > [id^=KEL]:hover > polygon, #citymap #KEL > [id^=KEL]:hover > path, #citymap #KEL > [id^=KEL]:hover > polyline {
     fill: lime; }
-  #citymap #TYN > [id^=TYN] {
+  #citymap #TYN > [id^=TYN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TYN > [id^=TYN]:hover > polygon, #citymap #TYN > [id^=TYN]:hover > path, #citymap #TYN > [id^=TYN]:hover > polyline {
     fill: lime; }
-  #citymap #HCC > [id^=HCC] {
+  #citymap #HCC > [id^=HCC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HCC > [id^=HCC]:hover > polygon, #citymap #HCC > [id^=HCC]:hover > path, #citymap #HCC > [id^=HCC]:hover > polyline {
     fill: lime; }
-  #citymap #HSZ > [id^=HSZ] {
+  #citymap #HSZ > [id^=HSZ]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HSZ > [id^=HSZ]:hover > polygon, #citymap #HSZ > [id^=HSZ]:hover > path, #citymap #HSZ > [id^=HSZ]:hover > polyline {
     fill: lime; }
-  #citymap #ZMI > [id^=ZMI] {
+  #citymap #ZMI > [id^=ZMI]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #ZMI > [id^=ZMI]:hover > polygon, #citymap #ZMI > [id^=ZMI]:hover > path, #citymap #ZMI > [id^=ZMI]:hover > polyline {
     fill: lime; }
-  #citymap #TXG > [id^=TXG] {
+  #citymap #TXG > [id^=TXG]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TXG > [id^=TXG]:hover > polygon, #citymap #TXG > [id^=TXG]:hover > path, #citymap #TXG > [id^=TXG]:hover > polyline {
     fill: lime; }
-  #citymap #CHW > [id^=CHW] {
+  #citymap #CHW > [id^=CHW]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CHW > [id^=CHW]:hover > polygon, #citymap #CHW > [id^=CHW]:hover > path, #citymap #CHW > [id^=CHW]:hover > polyline {
     fill: lime; }
-  #citymap #NAN > [id^=NAN] {
+  #citymap #NAN > [id^=NAN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #NAN > [id^=NAN]:hover > polygon, #citymap #NAN > [id^=NAN]:hover > path, #citymap #NAN > [id^=NAN]:hover > polyline {
     fill: lime; }
-  #citymap #YLN > [id^=YLN] {
+  #citymap #YLN > [id^=YLN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #YLN > [id^=YLN]:hover > polygon, #citymap #YLN > [id^=YLN]:hover > path, #citymap #YLN > [id^=YLN]:hover > polyline {
     fill: lime; }
-  #citymap #CYC > [id^=CYC] {
+  #citymap #CYC > [id^=CYC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CYC > [id^=CYC]:hover > polygon, #citymap #CYC > [id^=CYC]:hover > path, #citymap #CYC > [id^=CYC]:hover > polyline {
     fill: lime; }
-  #citymap #CYI > [id^=CYI] {
+  #citymap #CYI > [id^=CYI]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CYI > [id^=CYI]:hover > polygon, #citymap #CYI > [id^=CYI]:hover > path, #citymap #CYI > [id^=CYI]:hover > polyline {
     fill: lime; }
-  #citymap #TNN > [id^=TNN] {
+  #citymap #TNN > [id^=TNN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TNN > [id^=TNN]:hover > polygon, #citymap #TNN > [id^=TNN]:hover > path, #citymap #TNN > [id^=TNN]:hover > polyline {
     fill: lime; }
-  #citymap #KHH > [id^=KHH] {
+  #citymap #KHH > [id^=KHH]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KHH > [id^=KHH]:hover > polygon, #citymap #KHH > [id^=KHH]:hover > path, #citymap #KHH > [id^=KHH]:hover > polyline {
     fill: lime; }
-  #citymap #PIF > [id^=PIF] {
+  #citymap #PIF > [id^=PIF]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #PIF > [id^=PIF]:hover > polygon, #citymap #PIF > [id^=PIF]:hover > path, #citymap #PIF > [id^=PIF]:hover > polyline {
     fill: lime; }
-  #citymap #ILA > [id^=ILA] {
+  #citymap #ILA > [id^=ILA]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #ILA > [id^=ILA]:hover > polygon, #citymap #ILA > [id^=ILA]:hover > path, #citymap #ILA > [id^=ILA]:hover > polyline {
     fill: lime; }
-  #citymap #HUN > [id^=HUN] {
+  #citymap #HUN > [id^=HUN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HUN > [id^=HUN]:hover > polygon, #citymap #HUN > [id^=HUN]:hover > path, #citymap #HUN > [id^=HUN]:hover > polyline {
     fill: lime; }
-  #citymap #TTT > [id^=TTT] {
+  #citymap #TTT > [id^=TTT]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TTT > [id^=TTT]:hover > polygon, #citymap #TTT > [id^=TTT]:hover > path, #citymap #TTT > [id^=TTT]:hover > polyline {
     fill: lime; }
-  #citymap #MZG > [id^=MZG] {
+  #citymap #MZG > [id^=MZG]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MZG > [id^=MZG]:hover > polygon, #citymap #MZG > [id^=MZG]:hover > path, #citymap #MZG > [id^=MZG]:hover > polyline {
     fill: lime; }
-  #citymap #KNH > [id^=KNH] {
+  #citymap #KNH > [id^=KNH]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KNH > [id^=KNH]:hover > polygon, #citymap #KNH > [id^=KNH]:hover > path, #citymap #KNH > [id^=KNH]:hover > polyline {
     fill: lime; }
-  #citymap #MFK > [id^=MFK] {
+  #citymap #MFK > [id^=MFK]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MFK > [id^=MFK]:hover > polygon, #citymap #MFK > [id^=MFK]:hover > path, #citymap #MFK > [id^=MFK]:hover > polyline {
     fill: lime; }
-  #citymap #LAB > [id^=LAB] {
+  #citymap #LAB > [id^=LAB]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #LAB > [id^=LAB]:hover > polygon, #citymap #LAB > [id^=LAB]:hover > path, #citymap #LAB > [id^=LAB]:hover > polyline {
     fill: lime; }
-  #citymap #MAB > [id^=MAB] {
+  #citymap #MAB > [id^=MAB]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MAB > [id^=MAB]:hover > polygon, #citymap #MAB > [id^=MAB]:hover > path, #citymap #MAB > [id^=MAB]:hover > polyline {
     fill: lime; }

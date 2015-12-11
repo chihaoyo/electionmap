@@ -2,6 +2,9 @@ var $bigmap = $('#bigmap');
 var $citymap = $('#citymap');
 var $cities = $citymap.find('.city');
 var $info = $citymap.find('#district-info');
+var $close = $citymap.find('#close');
+
+var t = 0;
 
 var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF'];
 for(city of interactiveCities) {
@@ -19,27 +22,31 @@ for(city of interactiveCities) {
 
 		var city = db[thisCity];
 		var district = city.districts[thisDistrict - 1];
-		var districtName = city.name + '第' + thisDistrict + '選區';
+		var districtName = city.name + '第' + numerals[thisDistrict] + '選區';
 		var districtDetail = '';
 		for(subdistrict of district.subdistricts) {
 			var html = '<div class="subdistrict">' + subdistrict + '</div>';
-			if(subdistrict.indexOf('：') != -1) {
+			if(subdistrict.indexOf(':') != -1) {
 				// a subdistrict with more details
-				var buffer = subdistrict.split('：');
+				var buffer = subdistrict.split(':');
 				subdistrict = buffer[0];
-				buffer = buffer[1].split('、');
+				buffer = buffer[1].split(',');
 				html = '<div class="subdistrict"><div>' + subdistrict + buffer.length + '里</div>' + '<div class="boroughs">' + buffer.map(function(v) { return '<div class="borough">' + v + '</div>'; }).join('') + '</div></div>'
 			}
 			districtDetail += html;
 		}
 		$info.find('#name').html(districtName);
 		$info.find('#detail').html(districtDetail);
-		$info.show();
+		$info.finish().fadeIn(t);
+		$close.toggleClass('inactive');
+	}, function() {
+		$info.finish().fadeOut(t);
+		$close.toggleClass('inactive');
 	});
 }
-$citymap.find('#close').click(function() {
+$close.click(function() {
 	$bigmap.find('.active').attr('class', '');
 	$info.hide();
 	$cities.hide();
-	$citymap.hide();
+	$citymap.finish().fadeOut(t);
 });
