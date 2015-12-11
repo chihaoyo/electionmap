@@ -15,46 +15,40 @@ $textColor: black;
 $inactiveColor: #aaa;
 $hoverColor: white;
 $selectColor: lime;
-$constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
-#constituencies {
-  @each $c in $constituencies {
-    > ##{$c} {
-      cursor: pointer;
-      > ##{$c}-name {
-        display: none;
+$cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
+
+#bigmap {
+  #cities {
+    @each $c in $cities {
+      > ##{$c} {
+        cursor: pointer;
+        > ##{$c}-name {
+          display: none;
+        }
+        > polygon, > path, > polyline {
+          fill: $inactiveColor;
+        }
       }
-      > polygon, > path, > polyline {
-        fill: $inactiveColor;
+      > ##{$c}:hover {
+        > polygon, > path, > polyline {
+          fill: $hoverColor;
+        }
+        > ##{$c}-name {
+          display: block;
+          fill: $textColor;
+        }
       }
-    }
-    > ##{$c}:hover {
-      > polygon, > path, > polyline {
-        fill: $hoverColor;
-      }
-      > ##{$c}-name {
-        display: block;
-        fill: $textColor;
-      }
-    }
-    > ##{$c}.active {
-      > polygon, > path, > polyline {
-        fill: $hoverColor;
+      > ##{$c}.active {
+        > polygon, > path, > polyline {
+          fill: $hoverColor;
+        }
       }
     }
   }
-  /*> #LAB, > #MAB {
-    cursor: pointer;
-    > rect {
-      fill: $inactiveColor;
-    }
-    &:hover > rect {
-      fill: $hoverColor;
-    }
-  }*/
 }
 
 // map-each
-#mapEach {
+#citymap {
   display: none;
   position: fixed;
   top: 0;
@@ -65,9 +59,9 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
   > .city {
     display: none;
   }
-  > #info {
+  > #district-info {
     display: none;
-    width: 240px;
+    width: 100%;
     margin: 40px auto;
     padding: 10px 20px;
     background: white;
@@ -81,11 +75,26 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
       margin: 14px 0;
       font-size: 14px;
     }
+
+    .subdistrict {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1em;
+    }
+    .boroughs {
+      font-size: 11px;
+      .borough {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 1em;
+      }
+    }
   }
+  $x: 32px;
   > #close {
-    width: 64px;
-    height: 64px;
-    margin: 64px auto;
+    width: $x;
+    height: $x;
+    margin: $x auto;
     position: relative;
     background: $hoverColor;
     cursor: pointer;
@@ -109,7 +118,6 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
     }
   }
 
-  $cities: $constituencies;
   @each $c in $cities {
     ##{$c} {
       > [id^=#{$c}] {

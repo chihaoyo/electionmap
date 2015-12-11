@@ -1,9 +1,10 @@
+<div id="bigmap">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px"
 	 height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
 	<g id="background">
 		<rect fill="#9CE5FF" width="800" height="800"/>
 	</g>
-	<g id="constituencies">
+	<g id="cities">
 		<g id="PIF">
 			<path id="PIF-3" fill="#FFFFFF" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" d="M194.432,564.097
 				l11.299-11.798l26.121,25.573l10.575-10.7l17.705,17.582l-4.102,4.025V606l-16,16.125V647l9.271,9.292l-13.271,13.25V681l-16,16.5
@@ -1010,8 +1011,9 @@
 		</g>
 	</g>
 </svg>
+</div>
 
-<div id="mapEach">
+<div id="citymap">
 	<div id="close"></div>
 	<div class="city" id="TPE">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1927,7 +1929,7 @@
 			</g>
 		</svg>
 	</div>
-	<div id="info">
+	<div id="district-info">
 		<p id="name">第三東京市第十三選舉區</p>
 		<p id="detail">忠孝區、仁愛區、<br/>信義區三里：信一里、信二里、信三里</p>
 	</div>
@@ -1936,30 +1938,5 @@
 <title>map</title>
 <link rel="stylesheet" href="css/styles.css" />
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-
-var $mapEach = $('#mapEach');
-var $cities = $mapEach.find('.city');
-var $info = $mapEach.find('#info');
-
-var cities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF'];
-for(var i = 0; i < cities.length; i++) {
-	var city = cities[i];
-	$('#constituencies > #' + city).click(function() {
-		var $this = $(this);
-		$this.attr('class', 'active')
-		$mapEach.show();
-		$cities.filter('#' + $this.attr('id')).show();
-	});
-	$cities.filter('#' + city).find('[id^="' + city + '"]').hover(function() {
-		$info.show();
-	});
-}
-$('#mapEach > #close').click(function() {
-	$('.active').attr('class', '');
-	$info.hide();
-	$cities.hide();
-	$mapEach.hide();
-});
-
-</script>
+<script src="js/db.js"></script>
+<script src="js/interactivity.js"></script>

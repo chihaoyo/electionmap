@@ -8,330 +8,320 @@ svg {
   display: block;
   margin: 0 auto; }
 
-#constituencies {
-  /*> #LAB, > #MAB {
-    cursor: pointer;
-    > rect {
-      fill: $inactiveColor;
-    }
-    &:hover > rect {
-      fill: $hoverColor;
-    }
-  }*/ }
-  #constituencies > #TPE {
-    cursor: pointer; }
-    #constituencies > #TPE > #TPE-name {
-      display: none; }
-    #constituencies > #TPE > polygon, #constituencies > #TPE > path, #constituencies > #TPE > polyline {
-      fill: #aaa; }
-  #constituencies > #TPE:hover > polygon, #constituencies > #TPE:hover > path, #constituencies > #TPE:hover > polyline {
-    fill: white; }
-  #constituencies > #TPE:hover > #TPE-name {
-    display: block;
-    fill: black; }
-  #constituencies > #TPE.active > polygon, #constituencies > #TPE.active > path, #constituencies > #TPE.active > polyline {
-    fill: white; }
-  #constituencies > #NTC {
-    cursor: pointer; }
-    #constituencies > #NTC > #NTC-name {
-      display: none; }
-    #constituencies > #NTC > polygon, #constituencies > #NTC > path, #constituencies > #NTC > polyline {
-      fill: #aaa; }
-  #constituencies > #NTC:hover > polygon, #constituencies > #NTC:hover > path, #constituencies > #NTC:hover > polyline {
-    fill: white; }
-  #constituencies > #NTC:hover > #NTC-name {
-    display: block;
-    fill: black; }
-  #constituencies > #NTC.active > polygon, #constituencies > #NTC.active > path, #constituencies > #NTC.active > polyline {
-    fill: white; }
-  #constituencies > #KEL {
-    cursor: pointer; }
-    #constituencies > #KEL > #KEL-name {
-      display: none; }
-    #constituencies > #KEL > polygon, #constituencies > #KEL > path, #constituencies > #KEL > polyline {
-      fill: #aaa; }
-  #constituencies > #KEL:hover > polygon, #constituencies > #KEL:hover > path, #constituencies > #KEL:hover > polyline {
-    fill: white; }
-  #constituencies > #KEL:hover > #KEL-name {
-    display: block;
-    fill: black; }
-  #constituencies > #KEL.active > polygon, #constituencies > #KEL.active > path, #constituencies > #KEL.active > polyline {
-    fill: white; }
-  #constituencies > #TYN {
-    cursor: pointer; }
-    #constituencies > #TYN > #TYN-name {
-      display: none; }
-    #constituencies > #TYN > polygon, #constituencies > #TYN > path, #constituencies > #TYN > polyline {
-      fill: #aaa; }
-  #constituencies > #TYN:hover > polygon, #constituencies > #TYN:hover > path, #constituencies > #TYN:hover > polyline {
-    fill: white; }
-  #constituencies > #TYN:hover > #TYN-name {
-    display: block;
-    fill: black; }
-  #constituencies > #TYN.active > polygon, #constituencies > #TYN.active > path, #constituencies > #TYN.active > polyline {
-    fill: white; }
-  #constituencies > #HCC {
-    cursor: pointer; }
-    #constituencies > #HCC > #HCC-name {
-      display: none; }
-    #constituencies > #HCC > polygon, #constituencies > #HCC > path, #constituencies > #HCC > polyline {
-      fill: #aaa; }
-  #constituencies > #HCC:hover > polygon, #constituencies > #HCC:hover > path, #constituencies > #HCC:hover > polyline {
-    fill: white; }
-  #constituencies > #HCC:hover > #HCC-name {
-    display: block;
-    fill: black; }
-  #constituencies > #HCC.active > polygon, #constituencies > #HCC.active > path, #constituencies > #HCC.active > polyline {
-    fill: white; }
-  #constituencies > #HSZ {
-    cursor: pointer; }
-    #constituencies > #HSZ > #HSZ-name {
-      display: none; }
-    #constituencies > #HSZ > polygon, #constituencies > #HSZ > path, #constituencies > #HSZ > polyline {
-      fill: #aaa; }
-  #constituencies > #HSZ:hover > polygon, #constituencies > #HSZ:hover > path, #constituencies > #HSZ:hover > polyline {
-    fill: white; }
-  #constituencies > #HSZ:hover > #HSZ-name {
-    display: block;
-    fill: black; }
-  #constituencies > #HSZ.active > polygon, #constituencies > #HSZ.active > path, #constituencies > #HSZ.active > polyline {
-    fill: white; }
-  #constituencies > #ZMI {
-    cursor: pointer; }
-    #constituencies > #ZMI > #ZMI-name {
-      display: none; }
-    #constituencies > #ZMI > polygon, #constituencies > #ZMI > path, #constituencies > #ZMI > polyline {
-      fill: #aaa; }
-  #constituencies > #ZMI:hover > polygon, #constituencies > #ZMI:hover > path, #constituencies > #ZMI:hover > polyline {
-    fill: white; }
-  #constituencies > #ZMI:hover > #ZMI-name {
-    display: block;
-    fill: black; }
-  #constituencies > #ZMI.active > polygon, #constituencies > #ZMI.active > path, #constituencies > #ZMI.active > polyline {
-    fill: white; }
-  #constituencies > #TXG {
-    cursor: pointer; }
-    #constituencies > #TXG > #TXG-name {
-      display: none; }
-    #constituencies > #TXG > polygon, #constituencies > #TXG > path, #constituencies > #TXG > polyline {
-      fill: #aaa; }
-  #constituencies > #TXG:hover > polygon, #constituencies > #TXG:hover > path, #constituencies > #TXG:hover > polyline {
-    fill: white; }
-  #constituencies > #TXG:hover > #TXG-name {
-    display: block;
-    fill: black; }
-  #constituencies > #TXG.active > polygon, #constituencies > #TXG.active > path, #constituencies > #TXG.active > polyline {
-    fill: white; }
-  #constituencies > #CHW {
-    cursor: pointer; }
-    #constituencies > #CHW > #CHW-name {
-      display: none; }
-    #constituencies > #CHW > polygon, #constituencies > #CHW > path, #constituencies > #CHW > polyline {
-      fill: #aaa; }
-  #constituencies > #CHW:hover > polygon, #constituencies > #CHW:hover > path, #constituencies > #CHW:hover > polyline {
-    fill: white; }
-  #constituencies > #CHW:hover > #CHW-name {
-    display: block;
-    fill: black; }
-  #constituencies > #CHW.active > polygon, #constituencies > #CHW.active > path, #constituencies > #CHW.active > polyline {
-    fill: white; }
-  #constituencies > #NAN {
-    cursor: pointer; }
-    #constituencies > #NAN > #NAN-name {
-      display: none; }
-    #constituencies > #NAN > polygon, #constituencies > #NAN > path, #constituencies > #NAN > polyline {
-      fill: #aaa; }
-  #constituencies > #NAN:hover > polygon, #constituencies > #NAN:hover > path, #constituencies > #NAN:hover > polyline {
-    fill: white; }
-  #constituencies > #NAN:hover > #NAN-name {
-    display: block;
-    fill: black; }
-  #constituencies > #NAN.active > polygon, #constituencies > #NAN.active > path, #constituencies > #NAN.active > polyline {
-    fill: white; }
-  #constituencies > #YLN {
-    cursor: pointer; }
-    #constituencies > #YLN > #YLN-name {
-      display: none; }
-    #constituencies > #YLN > polygon, #constituencies > #YLN > path, #constituencies > #YLN > polyline {
-      fill: #aaa; }
-  #constituencies > #YLN:hover > polygon, #constituencies > #YLN:hover > path, #constituencies > #YLN:hover > polyline {
-    fill: white; }
-  #constituencies > #YLN:hover > #YLN-name {
-    display: block;
-    fill: black; }
-  #constituencies > #YLN.active > polygon, #constituencies > #YLN.active > path, #constituencies > #YLN.active > polyline {
-    fill: white; }
-  #constituencies > #CYC {
-    cursor: pointer; }
-    #constituencies > #CYC > #CYC-name {
-      display: none; }
-    #constituencies > #CYC > polygon, #constituencies > #CYC > path, #constituencies > #CYC > polyline {
-      fill: #aaa; }
-  #constituencies > #CYC:hover > polygon, #constituencies > #CYC:hover > path, #constituencies > #CYC:hover > polyline {
-    fill: white; }
-  #constituencies > #CYC:hover > #CYC-name {
-    display: block;
-    fill: black; }
-  #constituencies > #CYC.active > polygon, #constituencies > #CYC.active > path, #constituencies > #CYC.active > polyline {
-    fill: white; }
-  #constituencies > #CYI {
-    cursor: pointer; }
-    #constituencies > #CYI > #CYI-name {
-      display: none; }
-    #constituencies > #CYI > polygon, #constituencies > #CYI > path, #constituencies > #CYI > polyline {
-      fill: #aaa; }
-  #constituencies > #CYI:hover > polygon, #constituencies > #CYI:hover > path, #constituencies > #CYI:hover > polyline {
-    fill: white; }
-  #constituencies > #CYI:hover > #CYI-name {
-    display: block;
-    fill: black; }
-  #constituencies > #CYI.active > polygon, #constituencies > #CYI.active > path, #constituencies > #CYI.active > polyline {
-    fill: white; }
-  #constituencies > #TNN {
-    cursor: pointer; }
-    #constituencies > #TNN > #TNN-name {
-      display: none; }
-    #constituencies > #TNN > polygon, #constituencies > #TNN > path, #constituencies > #TNN > polyline {
-      fill: #aaa; }
-  #constituencies > #TNN:hover > polygon, #constituencies > #TNN:hover > path, #constituencies > #TNN:hover > polyline {
-    fill: white; }
-  #constituencies > #TNN:hover > #TNN-name {
-    display: block;
-    fill: black; }
-  #constituencies > #TNN.active > polygon, #constituencies > #TNN.active > path, #constituencies > #TNN.active > polyline {
-    fill: white; }
-  #constituencies > #KHH {
-    cursor: pointer; }
-    #constituencies > #KHH > #KHH-name {
-      display: none; }
-    #constituencies > #KHH > polygon, #constituencies > #KHH > path, #constituencies > #KHH > polyline {
-      fill: #aaa; }
-  #constituencies > #KHH:hover > polygon, #constituencies > #KHH:hover > path, #constituencies > #KHH:hover > polyline {
-    fill: white; }
-  #constituencies > #KHH:hover > #KHH-name {
-    display: block;
-    fill: black; }
-  #constituencies > #KHH.active > polygon, #constituencies > #KHH.active > path, #constituencies > #KHH.active > polyline {
-    fill: white; }
-  #constituencies > #PIF {
-    cursor: pointer; }
-    #constituencies > #PIF > #PIF-name {
-      display: none; }
-    #constituencies > #PIF > polygon, #constituencies > #PIF > path, #constituencies > #PIF > polyline {
-      fill: #aaa; }
-  #constituencies > #PIF:hover > polygon, #constituencies > #PIF:hover > path, #constituencies > #PIF:hover > polyline {
-    fill: white; }
-  #constituencies > #PIF:hover > #PIF-name {
-    display: block;
-    fill: black; }
-  #constituencies > #PIF.active > polygon, #constituencies > #PIF.active > path, #constituencies > #PIF.active > polyline {
-    fill: white; }
-  #constituencies > #ILA {
-    cursor: pointer; }
-    #constituencies > #ILA > #ILA-name {
-      display: none; }
-    #constituencies > #ILA > polygon, #constituencies > #ILA > path, #constituencies > #ILA > polyline {
-      fill: #aaa; }
-  #constituencies > #ILA:hover > polygon, #constituencies > #ILA:hover > path, #constituencies > #ILA:hover > polyline {
-    fill: white; }
-  #constituencies > #ILA:hover > #ILA-name {
-    display: block;
-    fill: black; }
-  #constituencies > #ILA.active > polygon, #constituencies > #ILA.active > path, #constituencies > #ILA.active > polyline {
-    fill: white; }
-  #constituencies > #HUN {
-    cursor: pointer; }
-    #constituencies > #HUN > #HUN-name {
-      display: none; }
-    #constituencies > #HUN > polygon, #constituencies > #HUN > path, #constituencies > #HUN > polyline {
-      fill: #aaa; }
-  #constituencies > #HUN:hover > polygon, #constituencies > #HUN:hover > path, #constituencies > #HUN:hover > polyline {
-    fill: white; }
-  #constituencies > #HUN:hover > #HUN-name {
-    display: block;
-    fill: black; }
-  #constituencies > #HUN.active > polygon, #constituencies > #HUN.active > path, #constituencies > #HUN.active > polyline {
-    fill: white; }
-  #constituencies > #TTT {
-    cursor: pointer; }
-    #constituencies > #TTT > #TTT-name {
-      display: none; }
-    #constituencies > #TTT > polygon, #constituencies > #TTT > path, #constituencies > #TTT > polyline {
-      fill: #aaa; }
-  #constituencies > #TTT:hover > polygon, #constituencies > #TTT:hover > path, #constituencies > #TTT:hover > polyline {
-    fill: white; }
-  #constituencies > #TTT:hover > #TTT-name {
-    display: block;
-    fill: black; }
-  #constituencies > #TTT.active > polygon, #constituencies > #TTT.active > path, #constituencies > #TTT.active > polyline {
-    fill: white; }
-  #constituencies > #MZG {
-    cursor: pointer; }
-    #constituencies > #MZG > #MZG-name {
-      display: none; }
-    #constituencies > #MZG > polygon, #constituencies > #MZG > path, #constituencies > #MZG > polyline {
-      fill: #aaa; }
-  #constituencies > #MZG:hover > polygon, #constituencies > #MZG:hover > path, #constituencies > #MZG:hover > polyline {
-    fill: white; }
-  #constituencies > #MZG:hover > #MZG-name {
-    display: block;
-    fill: black; }
-  #constituencies > #MZG.active > polygon, #constituencies > #MZG.active > path, #constituencies > #MZG.active > polyline {
-    fill: white; }
-  #constituencies > #KNH {
-    cursor: pointer; }
-    #constituencies > #KNH > #KNH-name {
-      display: none; }
-    #constituencies > #KNH > polygon, #constituencies > #KNH > path, #constituencies > #KNH > polyline {
-      fill: #aaa; }
-  #constituencies > #KNH:hover > polygon, #constituencies > #KNH:hover > path, #constituencies > #KNH:hover > polyline {
-    fill: white; }
-  #constituencies > #KNH:hover > #KNH-name {
-    display: block;
-    fill: black; }
-  #constituencies > #KNH.active > polygon, #constituencies > #KNH.active > path, #constituencies > #KNH.active > polyline {
-    fill: white; }
-  #constituencies > #MFK {
-    cursor: pointer; }
-    #constituencies > #MFK > #MFK-name {
-      display: none; }
-    #constituencies > #MFK > polygon, #constituencies > #MFK > path, #constituencies > #MFK > polyline {
-      fill: #aaa; }
-  #constituencies > #MFK:hover > polygon, #constituencies > #MFK:hover > path, #constituencies > #MFK:hover > polyline {
-    fill: white; }
-  #constituencies > #MFK:hover > #MFK-name {
-    display: block;
-    fill: black; }
-  #constituencies > #MFK.active > polygon, #constituencies > #MFK.active > path, #constituencies > #MFK.active > polyline {
-    fill: white; }
-  #constituencies > #LAB {
-    cursor: pointer; }
-    #constituencies > #LAB > #LAB-name {
-      display: none; }
-    #constituencies > #LAB > polygon, #constituencies > #LAB > path, #constituencies > #LAB > polyline {
-      fill: #aaa; }
-  #constituencies > #LAB:hover > polygon, #constituencies > #LAB:hover > path, #constituencies > #LAB:hover > polyline {
-    fill: white; }
-  #constituencies > #LAB:hover > #LAB-name {
-    display: block;
-    fill: black; }
-  #constituencies > #LAB.active > polygon, #constituencies > #LAB.active > path, #constituencies > #LAB.active > polyline {
-    fill: white; }
-  #constituencies > #MAB {
-    cursor: pointer; }
-    #constituencies > #MAB > #MAB-name {
-      display: none; }
-    #constituencies > #MAB > polygon, #constituencies > #MAB > path, #constituencies > #MAB > polyline {
-      fill: #aaa; }
-  #constituencies > #MAB:hover > polygon, #constituencies > #MAB:hover > path, #constituencies > #MAB:hover > polyline {
-    fill: white; }
-  #constituencies > #MAB:hover > #MAB-name {
-    display: block;
-    fill: black; }
-  #constituencies > #MAB.active > polygon, #constituencies > #MAB.active > path, #constituencies > #MAB.active > polyline {
-    fill: white; }
+#bigmap #cities > #TPE {
+  cursor: pointer; }
+  #bigmap #cities > #TPE > #TPE-name {
+    display: none; }
+  #bigmap #cities > #TPE > polygon, #bigmap #cities > #TPE > path, #bigmap #cities > #TPE > polyline {
+    fill: #aaa; }
+#bigmap #cities > #TPE:hover > polygon, #bigmap #cities > #TPE:hover > path, #bigmap #cities > #TPE:hover > polyline {
+  fill: white; }
+#bigmap #cities > #TPE:hover > #TPE-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #TPE.active > polygon, #bigmap #cities > #TPE.active > path, #bigmap #cities > #TPE.active > polyline {
+  fill: white; }
+#bigmap #cities > #NTC {
+  cursor: pointer; }
+  #bigmap #cities > #NTC > #NTC-name {
+    display: none; }
+  #bigmap #cities > #NTC > polygon, #bigmap #cities > #NTC > path, #bigmap #cities > #NTC > polyline {
+    fill: #aaa; }
+#bigmap #cities > #NTC:hover > polygon, #bigmap #cities > #NTC:hover > path, #bigmap #cities > #NTC:hover > polyline {
+  fill: white; }
+#bigmap #cities > #NTC:hover > #NTC-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #NTC.active > polygon, #bigmap #cities > #NTC.active > path, #bigmap #cities > #NTC.active > polyline {
+  fill: white; }
+#bigmap #cities > #KEL {
+  cursor: pointer; }
+  #bigmap #cities > #KEL > #KEL-name {
+    display: none; }
+  #bigmap #cities > #KEL > polygon, #bigmap #cities > #KEL > path, #bigmap #cities > #KEL > polyline {
+    fill: #aaa; }
+#bigmap #cities > #KEL:hover > polygon, #bigmap #cities > #KEL:hover > path, #bigmap #cities > #KEL:hover > polyline {
+  fill: white; }
+#bigmap #cities > #KEL:hover > #KEL-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #KEL.active > polygon, #bigmap #cities > #KEL.active > path, #bigmap #cities > #KEL.active > polyline {
+  fill: white; }
+#bigmap #cities > #TYN {
+  cursor: pointer; }
+  #bigmap #cities > #TYN > #TYN-name {
+    display: none; }
+  #bigmap #cities > #TYN > polygon, #bigmap #cities > #TYN > path, #bigmap #cities > #TYN > polyline {
+    fill: #aaa; }
+#bigmap #cities > #TYN:hover > polygon, #bigmap #cities > #TYN:hover > path, #bigmap #cities > #TYN:hover > polyline {
+  fill: white; }
+#bigmap #cities > #TYN:hover > #TYN-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #TYN.active > polygon, #bigmap #cities > #TYN.active > path, #bigmap #cities > #TYN.active > polyline {
+  fill: white; }
+#bigmap #cities > #HCC {
+  cursor: pointer; }
+  #bigmap #cities > #HCC > #HCC-name {
+    display: none; }
+  #bigmap #cities > #HCC > polygon, #bigmap #cities > #HCC > path, #bigmap #cities > #HCC > polyline {
+    fill: #aaa; }
+#bigmap #cities > #HCC:hover > polygon, #bigmap #cities > #HCC:hover > path, #bigmap #cities > #HCC:hover > polyline {
+  fill: white; }
+#bigmap #cities > #HCC:hover > #HCC-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #HCC.active > polygon, #bigmap #cities > #HCC.active > path, #bigmap #cities > #HCC.active > polyline {
+  fill: white; }
+#bigmap #cities > #HSZ {
+  cursor: pointer; }
+  #bigmap #cities > #HSZ > #HSZ-name {
+    display: none; }
+  #bigmap #cities > #HSZ > polygon, #bigmap #cities > #HSZ > path, #bigmap #cities > #HSZ > polyline {
+    fill: #aaa; }
+#bigmap #cities > #HSZ:hover > polygon, #bigmap #cities > #HSZ:hover > path, #bigmap #cities > #HSZ:hover > polyline {
+  fill: white; }
+#bigmap #cities > #HSZ:hover > #HSZ-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #HSZ.active > polygon, #bigmap #cities > #HSZ.active > path, #bigmap #cities > #HSZ.active > polyline {
+  fill: white; }
+#bigmap #cities > #ZMI {
+  cursor: pointer; }
+  #bigmap #cities > #ZMI > #ZMI-name {
+    display: none; }
+  #bigmap #cities > #ZMI > polygon, #bigmap #cities > #ZMI > path, #bigmap #cities > #ZMI > polyline {
+    fill: #aaa; }
+#bigmap #cities > #ZMI:hover > polygon, #bigmap #cities > #ZMI:hover > path, #bigmap #cities > #ZMI:hover > polyline {
+  fill: white; }
+#bigmap #cities > #ZMI:hover > #ZMI-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #ZMI.active > polygon, #bigmap #cities > #ZMI.active > path, #bigmap #cities > #ZMI.active > polyline {
+  fill: white; }
+#bigmap #cities > #TXG {
+  cursor: pointer; }
+  #bigmap #cities > #TXG > #TXG-name {
+    display: none; }
+  #bigmap #cities > #TXG > polygon, #bigmap #cities > #TXG > path, #bigmap #cities > #TXG > polyline {
+    fill: #aaa; }
+#bigmap #cities > #TXG:hover > polygon, #bigmap #cities > #TXG:hover > path, #bigmap #cities > #TXG:hover > polyline {
+  fill: white; }
+#bigmap #cities > #TXG:hover > #TXG-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #TXG.active > polygon, #bigmap #cities > #TXG.active > path, #bigmap #cities > #TXG.active > polyline {
+  fill: white; }
+#bigmap #cities > #CHW {
+  cursor: pointer; }
+  #bigmap #cities > #CHW > #CHW-name {
+    display: none; }
+  #bigmap #cities > #CHW > polygon, #bigmap #cities > #CHW > path, #bigmap #cities > #CHW > polyline {
+    fill: #aaa; }
+#bigmap #cities > #CHW:hover > polygon, #bigmap #cities > #CHW:hover > path, #bigmap #cities > #CHW:hover > polyline {
+  fill: white; }
+#bigmap #cities > #CHW:hover > #CHW-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #CHW.active > polygon, #bigmap #cities > #CHW.active > path, #bigmap #cities > #CHW.active > polyline {
+  fill: white; }
+#bigmap #cities > #NAN {
+  cursor: pointer; }
+  #bigmap #cities > #NAN > #NAN-name {
+    display: none; }
+  #bigmap #cities > #NAN > polygon, #bigmap #cities > #NAN > path, #bigmap #cities > #NAN > polyline {
+    fill: #aaa; }
+#bigmap #cities > #NAN:hover > polygon, #bigmap #cities > #NAN:hover > path, #bigmap #cities > #NAN:hover > polyline {
+  fill: white; }
+#bigmap #cities > #NAN:hover > #NAN-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #NAN.active > polygon, #bigmap #cities > #NAN.active > path, #bigmap #cities > #NAN.active > polyline {
+  fill: white; }
+#bigmap #cities > #YLN {
+  cursor: pointer; }
+  #bigmap #cities > #YLN > #YLN-name {
+    display: none; }
+  #bigmap #cities > #YLN > polygon, #bigmap #cities > #YLN > path, #bigmap #cities > #YLN > polyline {
+    fill: #aaa; }
+#bigmap #cities > #YLN:hover > polygon, #bigmap #cities > #YLN:hover > path, #bigmap #cities > #YLN:hover > polyline {
+  fill: white; }
+#bigmap #cities > #YLN:hover > #YLN-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #YLN.active > polygon, #bigmap #cities > #YLN.active > path, #bigmap #cities > #YLN.active > polyline {
+  fill: white; }
+#bigmap #cities > #CYC {
+  cursor: pointer; }
+  #bigmap #cities > #CYC > #CYC-name {
+    display: none; }
+  #bigmap #cities > #CYC > polygon, #bigmap #cities > #CYC > path, #bigmap #cities > #CYC > polyline {
+    fill: #aaa; }
+#bigmap #cities > #CYC:hover > polygon, #bigmap #cities > #CYC:hover > path, #bigmap #cities > #CYC:hover > polyline {
+  fill: white; }
+#bigmap #cities > #CYC:hover > #CYC-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #CYC.active > polygon, #bigmap #cities > #CYC.active > path, #bigmap #cities > #CYC.active > polyline {
+  fill: white; }
+#bigmap #cities > #CYI {
+  cursor: pointer; }
+  #bigmap #cities > #CYI > #CYI-name {
+    display: none; }
+  #bigmap #cities > #CYI > polygon, #bigmap #cities > #CYI > path, #bigmap #cities > #CYI > polyline {
+    fill: #aaa; }
+#bigmap #cities > #CYI:hover > polygon, #bigmap #cities > #CYI:hover > path, #bigmap #cities > #CYI:hover > polyline {
+  fill: white; }
+#bigmap #cities > #CYI:hover > #CYI-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #CYI.active > polygon, #bigmap #cities > #CYI.active > path, #bigmap #cities > #CYI.active > polyline {
+  fill: white; }
+#bigmap #cities > #TNN {
+  cursor: pointer; }
+  #bigmap #cities > #TNN > #TNN-name {
+    display: none; }
+  #bigmap #cities > #TNN > polygon, #bigmap #cities > #TNN > path, #bigmap #cities > #TNN > polyline {
+    fill: #aaa; }
+#bigmap #cities > #TNN:hover > polygon, #bigmap #cities > #TNN:hover > path, #bigmap #cities > #TNN:hover > polyline {
+  fill: white; }
+#bigmap #cities > #TNN:hover > #TNN-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #TNN.active > polygon, #bigmap #cities > #TNN.active > path, #bigmap #cities > #TNN.active > polyline {
+  fill: white; }
+#bigmap #cities > #KHH {
+  cursor: pointer; }
+  #bigmap #cities > #KHH > #KHH-name {
+    display: none; }
+  #bigmap #cities > #KHH > polygon, #bigmap #cities > #KHH > path, #bigmap #cities > #KHH > polyline {
+    fill: #aaa; }
+#bigmap #cities > #KHH:hover > polygon, #bigmap #cities > #KHH:hover > path, #bigmap #cities > #KHH:hover > polyline {
+  fill: white; }
+#bigmap #cities > #KHH:hover > #KHH-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #KHH.active > polygon, #bigmap #cities > #KHH.active > path, #bigmap #cities > #KHH.active > polyline {
+  fill: white; }
+#bigmap #cities > #PIF {
+  cursor: pointer; }
+  #bigmap #cities > #PIF > #PIF-name {
+    display: none; }
+  #bigmap #cities > #PIF > polygon, #bigmap #cities > #PIF > path, #bigmap #cities > #PIF > polyline {
+    fill: #aaa; }
+#bigmap #cities > #PIF:hover > polygon, #bigmap #cities > #PIF:hover > path, #bigmap #cities > #PIF:hover > polyline {
+  fill: white; }
+#bigmap #cities > #PIF:hover > #PIF-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #PIF.active > polygon, #bigmap #cities > #PIF.active > path, #bigmap #cities > #PIF.active > polyline {
+  fill: white; }
+#bigmap #cities > #ILA {
+  cursor: pointer; }
+  #bigmap #cities > #ILA > #ILA-name {
+    display: none; }
+  #bigmap #cities > #ILA > polygon, #bigmap #cities > #ILA > path, #bigmap #cities > #ILA > polyline {
+    fill: #aaa; }
+#bigmap #cities > #ILA:hover > polygon, #bigmap #cities > #ILA:hover > path, #bigmap #cities > #ILA:hover > polyline {
+  fill: white; }
+#bigmap #cities > #ILA:hover > #ILA-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #ILA.active > polygon, #bigmap #cities > #ILA.active > path, #bigmap #cities > #ILA.active > polyline {
+  fill: white; }
+#bigmap #cities > #HUN {
+  cursor: pointer; }
+  #bigmap #cities > #HUN > #HUN-name {
+    display: none; }
+  #bigmap #cities > #HUN > polygon, #bigmap #cities > #HUN > path, #bigmap #cities > #HUN > polyline {
+    fill: #aaa; }
+#bigmap #cities > #HUN:hover > polygon, #bigmap #cities > #HUN:hover > path, #bigmap #cities > #HUN:hover > polyline {
+  fill: white; }
+#bigmap #cities > #HUN:hover > #HUN-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #HUN.active > polygon, #bigmap #cities > #HUN.active > path, #bigmap #cities > #HUN.active > polyline {
+  fill: white; }
+#bigmap #cities > #TTT {
+  cursor: pointer; }
+  #bigmap #cities > #TTT > #TTT-name {
+    display: none; }
+  #bigmap #cities > #TTT > polygon, #bigmap #cities > #TTT > path, #bigmap #cities > #TTT > polyline {
+    fill: #aaa; }
+#bigmap #cities > #TTT:hover > polygon, #bigmap #cities > #TTT:hover > path, #bigmap #cities > #TTT:hover > polyline {
+  fill: white; }
+#bigmap #cities > #TTT:hover > #TTT-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #TTT.active > polygon, #bigmap #cities > #TTT.active > path, #bigmap #cities > #TTT.active > polyline {
+  fill: white; }
+#bigmap #cities > #MZG {
+  cursor: pointer; }
+  #bigmap #cities > #MZG > #MZG-name {
+    display: none; }
+  #bigmap #cities > #MZG > polygon, #bigmap #cities > #MZG > path, #bigmap #cities > #MZG > polyline {
+    fill: #aaa; }
+#bigmap #cities > #MZG:hover > polygon, #bigmap #cities > #MZG:hover > path, #bigmap #cities > #MZG:hover > polyline {
+  fill: white; }
+#bigmap #cities > #MZG:hover > #MZG-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #MZG.active > polygon, #bigmap #cities > #MZG.active > path, #bigmap #cities > #MZG.active > polyline {
+  fill: white; }
+#bigmap #cities > #KNH {
+  cursor: pointer; }
+  #bigmap #cities > #KNH > #KNH-name {
+    display: none; }
+  #bigmap #cities > #KNH > polygon, #bigmap #cities > #KNH > path, #bigmap #cities > #KNH > polyline {
+    fill: #aaa; }
+#bigmap #cities > #KNH:hover > polygon, #bigmap #cities > #KNH:hover > path, #bigmap #cities > #KNH:hover > polyline {
+  fill: white; }
+#bigmap #cities > #KNH:hover > #KNH-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #KNH.active > polygon, #bigmap #cities > #KNH.active > path, #bigmap #cities > #KNH.active > polyline {
+  fill: white; }
+#bigmap #cities > #MFK {
+  cursor: pointer; }
+  #bigmap #cities > #MFK > #MFK-name {
+    display: none; }
+  #bigmap #cities > #MFK > polygon, #bigmap #cities > #MFK > path, #bigmap #cities > #MFK > polyline {
+    fill: #aaa; }
+#bigmap #cities > #MFK:hover > polygon, #bigmap #cities > #MFK:hover > path, #bigmap #cities > #MFK:hover > polyline {
+  fill: white; }
+#bigmap #cities > #MFK:hover > #MFK-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #MFK.active > polygon, #bigmap #cities > #MFK.active > path, #bigmap #cities > #MFK.active > polyline {
+  fill: white; }
+#bigmap #cities > #LAB {
+  cursor: pointer; }
+  #bigmap #cities > #LAB > #LAB-name {
+    display: none; }
+  #bigmap #cities > #LAB > polygon, #bigmap #cities > #LAB > path, #bigmap #cities > #LAB > polyline {
+    fill: #aaa; }
+#bigmap #cities > #LAB:hover > polygon, #bigmap #cities > #LAB:hover > path, #bigmap #cities > #LAB:hover > polyline {
+  fill: white; }
+#bigmap #cities > #LAB:hover > #LAB-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #LAB.active > polygon, #bigmap #cities > #LAB.active > path, #bigmap #cities > #LAB.active > polyline {
+  fill: white; }
+#bigmap #cities > #MAB {
+  cursor: pointer; }
+  #bigmap #cities > #MAB > #MAB-name {
+    display: none; }
+  #bigmap #cities > #MAB > polygon, #bigmap #cities > #MAB > path, #bigmap #cities > #MAB > polyline {
+    fill: #aaa; }
+#bigmap #cities > #MAB:hover > polygon, #bigmap #cities > #MAB:hover > path, #bigmap #cities > #MAB:hover > polyline {
+  fill: white; }
+#bigmap #cities > #MAB:hover > #MAB-name {
+  display: block;
+  fill: black; }
+#bigmap #cities > #MAB.active > polygon, #bigmap #cities > #MAB.active > path, #bigmap #cities > #MAB.active > polyline {
+  fill: white; }
 
-#mapEach {
+#citymap {
   display: none;
   position: fixed;
   top: 0;
@@ -339,31 +329,41 @@ svg {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.32); }
-  #mapEach > .city {
+  #citymap > .city {
     display: none; }
-  #mapEach > #info {
+  #citymap > #district-info {
     display: none;
-    width: 240px;
+    width: 100%;
     margin: 40px auto;
     padding: 10px 20px;
     background: white;
     color: black; }
-    #mapEach > #info > #name {
+    #citymap > #district-info > #name {
       margin: 14px 0;
       font-size: 18px; }
-    #mapEach > #info > #detail {
+    #citymap > #district-info > #detail {
       margin: 14px 0;
       font-size: 14px; }
-  #mapEach > #close {
-    width: 64px;
-    height: 64px;
-    margin: 64px auto;
+    #citymap > #district-info .subdistrict {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1em; }
+    #citymap > #district-info .boroughs {
+      font-size: 11px; }
+      #citymap > #district-info .boroughs .borough {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 1em; }
+  #citymap > #close {
+    width: 32px;
+    height: 32px;
+    margin: 32px auto;
     position: relative;
     background: white;
     cursor: pointer; }
-    #mapEach > #close:hover {
+    #citymap > #close:hover {
       background: lime; }
-    #mapEach > #close:before, #mapEach > #close:after {
+    #citymap > #close:before, #citymap > #close:after {
       content: '';
       display: block;
       width: 100%;
@@ -373,103 +373,103 @@ svg {
       top: calc(50% - 1px);
       left: 0;
       transform: rotate(45deg); }
-    #mapEach > #close:after {
+    #citymap > #close:after {
       transform: rotate(-45deg); }
-  #mapEach #TPE > [id^=TPE] {
+  #citymap #TPE > [id^=TPE] {
     cursor: pointer; }
-  #mapEach #TPE > [id^=TPE]:hover > polygon, #mapEach #TPE > [id^=TPE]:hover > path, #mapEach #TPE > [id^=TPE]:hover > polyline {
+  #citymap #TPE > [id^=TPE]:hover > polygon, #citymap #TPE > [id^=TPE]:hover > path, #citymap #TPE > [id^=TPE]:hover > polyline {
     fill: lime; }
-  #mapEach #NTC > [id^=NTC] {
+  #citymap #NTC > [id^=NTC] {
     cursor: pointer; }
-  #mapEach #NTC > [id^=NTC]:hover > polygon, #mapEach #NTC > [id^=NTC]:hover > path, #mapEach #NTC > [id^=NTC]:hover > polyline {
+  #citymap #NTC > [id^=NTC]:hover > polygon, #citymap #NTC > [id^=NTC]:hover > path, #citymap #NTC > [id^=NTC]:hover > polyline {
     fill: lime; }
-  #mapEach #KEL > [id^=KEL] {
+  #citymap #KEL > [id^=KEL] {
     cursor: pointer; }
-  #mapEach #KEL > [id^=KEL]:hover > polygon, #mapEach #KEL > [id^=KEL]:hover > path, #mapEach #KEL > [id^=KEL]:hover > polyline {
+  #citymap #KEL > [id^=KEL]:hover > polygon, #citymap #KEL > [id^=KEL]:hover > path, #citymap #KEL > [id^=KEL]:hover > polyline {
     fill: lime; }
-  #mapEach #TYN > [id^=TYN] {
+  #citymap #TYN > [id^=TYN] {
     cursor: pointer; }
-  #mapEach #TYN > [id^=TYN]:hover > polygon, #mapEach #TYN > [id^=TYN]:hover > path, #mapEach #TYN > [id^=TYN]:hover > polyline {
+  #citymap #TYN > [id^=TYN]:hover > polygon, #citymap #TYN > [id^=TYN]:hover > path, #citymap #TYN > [id^=TYN]:hover > polyline {
     fill: lime; }
-  #mapEach #HCC > [id^=HCC] {
+  #citymap #HCC > [id^=HCC] {
     cursor: pointer; }
-  #mapEach #HCC > [id^=HCC]:hover > polygon, #mapEach #HCC > [id^=HCC]:hover > path, #mapEach #HCC > [id^=HCC]:hover > polyline {
+  #citymap #HCC > [id^=HCC]:hover > polygon, #citymap #HCC > [id^=HCC]:hover > path, #citymap #HCC > [id^=HCC]:hover > polyline {
     fill: lime; }
-  #mapEach #HSZ > [id^=HSZ] {
+  #citymap #HSZ > [id^=HSZ] {
     cursor: pointer; }
-  #mapEach #HSZ > [id^=HSZ]:hover > polygon, #mapEach #HSZ > [id^=HSZ]:hover > path, #mapEach #HSZ > [id^=HSZ]:hover > polyline {
+  #citymap #HSZ > [id^=HSZ]:hover > polygon, #citymap #HSZ > [id^=HSZ]:hover > path, #citymap #HSZ > [id^=HSZ]:hover > polyline {
     fill: lime; }
-  #mapEach #ZMI > [id^=ZMI] {
+  #citymap #ZMI > [id^=ZMI] {
     cursor: pointer; }
-  #mapEach #ZMI > [id^=ZMI]:hover > polygon, #mapEach #ZMI > [id^=ZMI]:hover > path, #mapEach #ZMI > [id^=ZMI]:hover > polyline {
+  #citymap #ZMI > [id^=ZMI]:hover > polygon, #citymap #ZMI > [id^=ZMI]:hover > path, #citymap #ZMI > [id^=ZMI]:hover > polyline {
     fill: lime; }
-  #mapEach #TXG > [id^=TXG] {
+  #citymap #TXG > [id^=TXG] {
     cursor: pointer; }
-  #mapEach #TXG > [id^=TXG]:hover > polygon, #mapEach #TXG > [id^=TXG]:hover > path, #mapEach #TXG > [id^=TXG]:hover > polyline {
+  #citymap #TXG > [id^=TXG]:hover > polygon, #citymap #TXG > [id^=TXG]:hover > path, #citymap #TXG > [id^=TXG]:hover > polyline {
     fill: lime; }
-  #mapEach #CHW > [id^=CHW] {
+  #citymap #CHW > [id^=CHW] {
     cursor: pointer; }
-  #mapEach #CHW > [id^=CHW]:hover > polygon, #mapEach #CHW > [id^=CHW]:hover > path, #mapEach #CHW > [id^=CHW]:hover > polyline {
+  #citymap #CHW > [id^=CHW]:hover > polygon, #citymap #CHW > [id^=CHW]:hover > path, #citymap #CHW > [id^=CHW]:hover > polyline {
     fill: lime; }
-  #mapEach #NAN > [id^=NAN] {
+  #citymap #NAN > [id^=NAN] {
     cursor: pointer; }
-  #mapEach #NAN > [id^=NAN]:hover > polygon, #mapEach #NAN > [id^=NAN]:hover > path, #mapEach #NAN > [id^=NAN]:hover > polyline {
+  #citymap #NAN > [id^=NAN]:hover > polygon, #citymap #NAN > [id^=NAN]:hover > path, #citymap #NAN > [id^=NAN]:hover > polyline {
     fill: lime; }
-  #mapEach #YLN > [id^=YLN] {
+  #citymap #YLN > [id^=YLN] {
     cursor: pointer; }
-  #mapEach #YLN > [id^=YLN]:hover > polygon, #mapEach #YLN > [id^=YLN]:hover > path, #mapEach #YLN > [id^=YLN]:hover > polyline {
+  #citymap #YLN > [id^=YLN]:hover > polygon, #citymap #YLN > [id^=YLN]:hover > path, #citymap #YLN > [id^=YLN]:hover > polyline {
     fill: lime; }
-  #mapEach #CYC > [id^=CYC] {
+  #citymap #CYC > [id^=CYC] {
     cursor: pointer; }
-  #mapEach #CYC > [id^=CYC]:hover > polygon, #mapEach #CYC > [id^=CYC]:hover > path, #mapEach #CYC > [id^=CYC]:hover > polyline {
+  #citymap #CYC > [id^=CYC]:hover > polygon, #citymap #CYC > [id^=CYC]:hover > path, #citymap #CYC > [id^=CYC]:hover > polyline {
     fill: lime; }
-  #mapEach #CYI > [id^=CYI] {
+  #citymap #CYI > [id^=CYI] {
     cursor: pointer; }
-  #mapEach #CYI > [id^=CYI]:hover > polygon, #mapEach #CYI > [id^=CYI]:hover > path, #mapEach #CYI > [id^=CYI]:hover > polyline {
+  #citymap #CYI > [id^=CYI]:hover > polygon, #citymap #CYI > [id^=CYI]:hover > path, #citymap #CYI > [id^=CYI]:hover > polyline {
     fill: lime; }
-  #mapEach #TNN > [id^=TNN] {
+  #citymap #TNN > [id^=TNN] {
     cursor: pointer; }
-  #mapEach #TNN > [id^=TNN]:hover > polygon, #mapEach #TNN > [id^=TNN]:hover > path, #mapEach #TNN > [id^=TNN]:hover > polyline {
+  #citymap #TNN > [id^=TNN]:hover > polygon, #citymap #TNN > [id^=TNN]:hover > path, #citymap #TNN > [id^=TNN]:hover > polyline {
     fill: lime; }
-  #mapEach #KHH > [id^=KHH] {
+  #citymap #KHH > [id^=KHH] {
     cursor: pointer; }
-  #mapEach #KHH > [id^=KHH]:hover > polygon, #mapEach #KHH > [id^=KHH]:hover > path, #mapEach #KHH > [id^=KHH]:hover > polyline {
+  #citymap #KHH > [id^=KHH]:hover > polygon, #citymap #KHH > [id^=KHH]:hover > path, #citymap #KHH > [id^=KHH]:hover > polyline {
     fill: lime; }
-  #mapEach #PIF > [id^=PIF] {
+  #citymap #PIF > [id^=PIF] {
     cursor: pointer; }
-  #mapEach #PIF > [id^=PIF]:hover > polygon, #mapEach #PIF > [id^=PIF]:hover > path, #mapEach #PIF > [id^=PIF]:hover > polyline {
+  #citymap #PIF > [id^=PIF]:hover > polygon, #citymap #PIF > [id^=PIF]:hover > path, #citymap #PIF > [id^=PIF]:hover > polyline {
     fill: lime; }
-  #mapEach #ILA > [id^=ILA] {
+  #citymap #ILA > [id^=ILA] {
     cursor: pointer; }
-  #mapEach #ILA > [id^=ILA]:hover > polygon, #mapEach #ILA > [id^=ILA]:hover > path, #mapEach #ILA > [id^=ILA]:hover > polyline {
+  #citymap #ILA > [id^=ILA]:hover > polygon, #citymap #ILA > [id^=ILA]:hover > path, #citymap #ILA > [id^=ILA]:hover > polyline {
     fill: lime; }
-  #mapEach #HUN > [id^=HUN] {
+  #citymap #HUN > [id^=HUN] {
     cursor: pointer; }
-  #mapEach #HUN > [id^=HUN]:hover > polygon, #mapEach #HUN > [id^=HUN]:hover > path, #mapEach #HUN > [id^=HUN]:hover > polyline {
+  #citymap #HUN > [id^=HUN]:hover > polygon, #citymap #HUN > [id^=HUN]:hover > path, #citymap #HUN > [id^=HUN]:hover > polyline {
     fill: lime; }
-  #mapEach #TTT > [id^=TTT] {
+  #citymap #TTT > [id^=TTT] {
     cursor: pointer; }
-  #mapEach #TTT > [id^=TTT]:hover > polygon, #mapEach #TTT > [id^=TTT]:hover > path, #mapEach #TTT > [id^=TTT]:hover > polyline {
+  #citymap #TTT > [id^=TTT]:hover > polygon, #citymap #TTT > [id^=TTT]:hover > path, #citymap #TTT > [id^=TTT]:hover > polyline {
     fill: lime; }
-  #mapEach #MZG > [id^=MZG] {
+  #citymap #MZG > [id^=MZG] {
     cursor: pointer; }
-  #mapEach #MZG > [id^=MZG]:hover > polygon, #mapEach #MZG > [id^=MZG]:hover > path, #mapEach #MZG > [id^=MZG]:hover > polyline {
+  #citymap #MZG > [id^=MZG]:hover > polygon, #citymap #MZG > [id^=MZG]:hover > path, #citymap #MZG > [id^=MZG]:hover > polyline {
     fill: lime; }
-  #mapEach #KNH > [id^=KNH] {
+  #citymap #KNH > [id^=KNH] {
     cursor: pointer; }
-  #mapEach #KNH > [id^=KNH]:hover > polygon, #mapEach #KNH > [id^=KNH]:hover > path, #mapEach #KNH > [id^=KNH]:hover > polyline {
+  #citymap #KNH > [id^=KNH]:hover > polygon, #citymap #KNH > [id^=KNH]:hover > path, #citymap #KNH > [id^=KNH]:hover > polyline {
     fill: lime; }
-  #mapEach #MFK > [id^=MFK] {
+  #citymap #MFK > [id^=MFK] {
     cursor: pointer; }
-  #mapEach #MFK > [id^=MFK]:hover > polygon, #mapEach #MFK > [id^=MFK]:hover > path, #mapEach #MFK > [id^=MFK]:hover > polyline {
+  #citymap #MFK > [id^=MFK]:hover > polygon, #citymap #MFK > [id^=MFK]:hover > path, #citymap #MFK > [id^=MFK]:hover > polyline {
     fill: lime; }
-  #mapEach #LAB > [id^=LAB] {
+  #citymap #LAB > [id^=LAB] {
     cursor: pointer; }
-  #mapEach #LAB > [id^=LAB]:hover > polygon, #mapEach #LAB > [id^=LAB]:hover > path, #mapEach #LAB > [id^=LAB]:hover > polyline {
+  #citymap #LAB > [id^=LAB]:hover > polygon, #citymap #LAB > [id^=LAB]:hover > path, #citymap #LAB > [id^=LAB]:hover > polyline {
     fill: lime; }
-  #mapEach #MAB > [id^=MAB] {
+  #citymap #MAB > [id^=MAB] {
     cursor: pointer; }
-  #mapEach #MAB > [id^=MAB]:hover > polygon, #mapEach #MAB > [id^=MAB]:hover > path, #mapEach #MAB > [id^=MAB]:hover > polyline {
+  #citymap #MAB > [id^=MAB]:hover > polygon, #citymap #MAB > [id^=MAB]:hover > path, #citymap #MAB > [id^=MAB]:hover > polyline {
     fill: lime; }
 
 /*# sourceMappingURL=styles.css.map */
