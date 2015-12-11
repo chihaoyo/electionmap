@@ -4,8 +4,6 @@ var $cities = $citymap.find('.city');
 var $info = $citymap.find('#district-info');
 var $close = $citymap.find('#close');
 
-var t = 0;
-
 var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF'];
 for(city of interactiveCities) {
 	$bigmap.find('#cities > #' + city).click(function() {
@@ -37,10 +35,10 @@ for(city of interactiveCities) {
 		}
 		$info.find('#name').html(districtName);
 		$info.find('#detail').html(districtDetail);
-		$info.finish().fadeIn(t);
+		$info.show();
 		$close.toggleClass('inactive');
 	}, function() {
-		$info.finish().fadeOut(t);
+		$info.hide();
 		$close.toggleClass('inactive');
 	});
 }
@@ -48,5 +46,5 @@ $close.click(function() {
 	$bigmap.find('.active').attr('class', '');
 	$info.hide();
 	$cities.hide();
-	$citymap.finish().fadeOut(t);
+	$citymap.hide();
 });
