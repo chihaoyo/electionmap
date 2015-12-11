@@ -108,16 +108,18 @@ $constituencies: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF
       transform: rotate(-45deg);
     }
   }
-}
 
-$cities: $constituencies;
-@each $c in $cities {
-  ##{$c} {
-    > [id^=#{$c}] {
-      cursor: pointer;
-    }
-    > [id^=#{$c}]:hover, a:hover > polygon {
-      fill: $selectColor;
+  $cities: $constituencies;
+  @each $c in $cities {
+    ##{$c} {
+      > [id^=#{$c}] {
+        cursor: pointer;
+      }
+      > [id^=#{$c}]:hover {
+        > polygon, > path, > polyline {
+          fill: $selectColor;
+        }
+      }
     }
   }
 }

@@ -375,125 +375,101 @@ svg {
       transform: rotate(45deg); }
     #mapEach > #close:after {
       transform: rotate(-45deg); }
-
-#TPE > [id^=TPE] {
-  cursor: pointer; }
-#TPE > [id^=TPE]:hover, #TPE a:hover > polygon {
-  fill: lime; }
-
-#NTC > [id^=NTC] {
-  cursor: pointer; }
-#NTC > [id^=NTC]:hover, #NTC a:hover > polygon {
-  fill: lime; }
-
-#KEL > [id^=KEL] {
-  cursor: pointer; }
-#KEL > [id^=KEL]:hover, #KEL a:hover > polygon {
-  fill: lime; }
-
-#TYN > [id^=TYN] {
-  cursor: pointer; }
-#TYN > [id^=TYN]:hover, #TYN a:hover > polygon {
-  fill: lime; }
-
-#HCC > [id^=HCC] {
-  cursor: pointer; }
-#HCC > [id^=HCC]:hover, #HCC a:hover > polygon {
-  fill: lime; }
-
-#HSZ > [id^=HSZ] {
-  cursor: pointer; }
-#HSZ > [id^=HSZ]:hover, #HSZ a:hover > polygon {
-  fill: lime; }
-
-#ZMI > [id^=ZMI] {
-  cursor: pointer; }
-#ZMI > [id^=ZMI]:hover, #ZMI a:hover > polygon {
-  fill: lime; }
-
-#TXG > [id^=TXG] {
-  cursor: pointer; }
-#TXG > [id^=TXG]:hover, #TXG a:hover > polygon {
-  fill: lime; }
-
-#CHW > [id^=CHW] {
-  cursor: pointer; }
-#CHW > [id^=CHW]:hover, #CHW a:hover > polygon {
-  fill: lime; }
-
-#NAN > [id^=NAN] {
-  cursor: pointer; }
-#NAN > [id^=NAN]:hover, #NAN a:hover > polygon {
-  fill: lime; }
-
-#YLN > [id^=YLN] {
-  cursor: pointer; }
-#YLN > [id^=YLN]:hover, #YLN a:hover > polygon {
-  fill: lime; }
-
-#CYC > [id^=CYC] {
-  cursor: pointer; }
-#CYC > [id^=CYC]:hover, #CYC a:hover > polygon {
-  fill: lime; }
-
-#CYI > [id^=CYI] {
-  cursor: pointer; }
-#CYI > [id^=CYI]:hover, #CYI a:hover > polygon {
-  fill: lime; }
-
-#TNN > [id^=TNN] {
-  cursor: pointer; }
-#TNN > [id^=TNN]:hover, #TNN a:hover > polygon {
-  fill: lime; }
-
-#KHH > [id^=KHH] {
-  cursor: pointer; }
-#KHH > [id^=KHH]:hover, #KHH a:hover > polygon {
-  fill: lime; }
-
-#PIF > [id^=PIF] {
-  cursor: pointer; }
-#PIF > [id^=PIF]:hover, #PIF a:hover > polygon {
-  fill: lime; }
-
-#ILA > [id^=ILA] {
-  cursor: pointer; }
-#ILA > [id^=ILA]:hover, #ILA a:hover > polygon {
-  fill: lime; }
-
-#HUN > [id^=HUN] {
-  cursor: pointer; }
-#HUN > [id^=HUN]:hover, #HUN a:hover > polygon {
-  fill: lime; }
-
-#TTT > [id^=TTT] {
-  cursor: pointer; }
-#TTT > [id^=TTT]:hover, #TTT a:hover > polygon {
-  fill: lime; }
-
-#MZG > [id^=MZG] {
-  cursor: pointer; }
-#MZG > [id^=MZG]:hover, #MZG a:hover > polygon {
-  fill: lime; }
-
-#KNH > [id^=KNH] {
-  cursor: pointer; }
-#KNH > [id^=KNH]:hover, #KNH a:hover > polygon {
-  fill: lime; }
-
-#MFK > [id^=MFK] {
-  cursor: pointer; }
-#MFK > [id^=MFK]:hover, #MFK a:hover > polygon {
-  fill: lime; }
-
-#LAB > [id^=LAB] {
-  cursor: pointer; }
-#LAB > [id^=LAB]:hover, #LAB a:hover > polygon {
-  fill: lime; }
-
-#MAB > [id^=MAB] {
-  cursor: pointer; }
-#MAB > [id^=MAB]:hover, #MAB a:hover > polygon {
-  fill: lime; }
+  #mapEach #TPE > [id^=TPE] {
+    cursor: pointer; }
+  #mapEach #TPE > [id^=TPE]:hover > polygon, #mapEach #TPE > [id^=TPE]:hover > path, #mapEach #TPE > [id^=TPE]:hover > polyline {
+    fill: lime; }
+  #mapEach #NTC > [id^=NTC] {
+    cursor: pointer; }
+  #mapEach #NTC > [id^=NTC]:hover > polygon, #mapEach #NTC > [id^=NTC]:hover > path, #mapEach #NTC > [id^=NTC]:hover > polyline {
+    fill: lime; }
+  #mapEach #KEL > [id^=KEL] {
+    cursor: pointer; }
+  #mapEach #KEL > [id^=KEL]:hover > polygon, #mapEach #KEL > [id^=KEL]:hover > path, #mapEach #KEL > [id^=KEL]:hover > polyline {
+    fill: lime; }
+  #mapEach #TYN > [id^=TYN] {
+    cursor: pointer; }
+  #mapEach #TYN > [id^=TYN]:hover > polygon, #mapEach #TYN > [id^=TYN]:hover > path, #mapEach #TYN > [id^=TYN]:hover > polyline {
+    fill: lime; }
+  #mapEach #HCC > [id^=HCC] {
+    cursor: pointer; }
+  #mapEach #HCC > [id^=HCC]:hover > polygon, #mapEach #HCC > [id^=HCC]:hover > path, #mapEach #HCC > [id^=HCC]:hover > polyline {
+    fill: lime; }
+  #mapEach #HSZ > [id^=HSZ] {
+    cursor: pointer; }
+  #mapEach #HSZ > [id^=HSZ]:hover > polygon, #mapEach #HSZ > [id^=HSZ]:hover > path, #mapEach #HSZ > [id^=HSZ]:hover > polyline {
+    fill: lime; }
+  #mapEach #ZMI > [id^=ZMI] {
+    cursor: pointer; }
+  #mapEach #ZMI > [id^=ZMI]:hover > polygon, #mapEach #ZMI > [id^=ZMI]:hover > path, #mapEach #ZMI > [id^=ZMI]:hover > polyline {
+    fill: lime; }
+  #mapEach #TXG > [id^=TXG] {
+    cursor: pointer; }
+  #mapEach #TXG > [id^=TXG]:hover > polygon, #mapEach #TXG > [id^=TXG]:hover > path, #mapEach #TXG > [id^=TXG]:hover > polyline {
+    fill: lime; }
+  #mapEach #CHW > [id^=CHW] {
+    cursor: pointer; }
+  #mapEach #CHW > [id^=CHW]:hover > polygon, #mapEach #CHW > [id^=CHW]:hover > path, #mapEach #CHW > [id^=CHW]:hover > polyline {
+    fill: lime; }
+  #mapEach #NAN > [id^=NAN] {
+    cursor: pointer; }
+  #mapEach #NAN > [id^=NAN]:hover > polygon, #mapEach #NAN > [id^=NAN]:hover > path, #mapEach #NAN > [id^=NAN]:hover > polyline {
+    fill: lime; }
+  #mapEach #YLN > [id^=YLN] {
+    cursor: pointer; }
+  #mapEach #YLN > [id^=YLN]:hover > polygon, #mapEach #YLN > [id^=YLN]:hover > path, #mapEach #YLN > [id^=YLN]:hover > polyline {
+    fill: lime; }
+  #mapEach #CYC > [id^=CYC] {
+    cursor: pointer; }
+  #mapEach #CYC > [id^=CYC]:hover > polygon, #mapEach #CYC > [id^=CYC]:hover > path, #mapEach #CYC > [id^=CYC]:hover > polyline {
+    fill: lime; }
+  #mapEach #CYI > [id^=CYI] {
+    cursor: pointer; }
+  #mapEach #CYI > [id^=CYI]:hover > polygon, #mapEach #CYI > [id^=CYI]:hover > path, #mapEach #CYI > [id^=CYI]:hover > polyline {
+    fill: lime; }
+  #mapEach #TNN > [id^=TNN] {
+    cursor: pointer; }
+  #mapEach #TNN > [id^=TNN]:hover > polygon, #mapEach #TNN > [id^=TNN]:hover > path, #mapEach #TNN > [id^=TNN]:hover > polyline {
+    fill: lime; }
+  #mapEach #KHH > [id^=KHH] {
+    cursor: pointer; }
+  #mapEach #KHH > [id^=KHH]:hover > polygon, #mapEach #KHH > [id^=KHH]:hover > path, #mapEach #KHH > [id^=KHH]:hover > polyline {
+    fill: lime; }
+  #mapEach #PIF > [id^=PIF] {
+    cursor: pointer; }
+  #mapEach #PIF > [id^=PIF]:hover > polygon, #mapEach #PIF > [id^=PIF]:hover > path, #mapEach #PIF > [id^=PIF]:hover > polyline {
+    fill: lime; }
+  #mapEach #ILA > [id^=ILA] {
+    cursor: pointer; }
+  #mapEach #ILA > [id^=ILA]:hover > polygon, #mapEach #ILA > [id^=ILA]:hover > path, #mapEach #ILA > [id^=ILA]:hover > polyline {
+    fill: lime; }
+  #mapEach #HUN > [id^=HUN] {
+    cursor: pointer; }
+  #mapEach #HUN > [id^=HUN]:hover > polygon, #mapEach #HUN > [id^=HUN]:hover > path, #mapEach #HUN > [id^=HUN]:hover > polyline {
+    fill: lime; }
+  #mapEach #TTT > [id^=TTT] {
+    cursor: pointer; }
+  #mapEach #TTT > [id^=TTT]:hover > polygon, #mapEach #TTT > [id^=TTT]:hover > path, #mapEach #TTT > [id^=TTT]:hover > polyline {
+    fill: lime; }
+  #mapEach #MZG > [id^=MZG] {
+    cursor: pointer; }
+  #mapEach #MZG > [id^=MZG]:hover > polygon, #mapEach #MZG > [id^=MZG]:hover > path, #mapEach #MZG > [id^=MZG]:hover > polyline {
+    fill: lime; }
+  #mapEach #KNH > [id^=KNH] {
+    cursor: pointer; }
+  #mapEach #KNH > [id^=KNH]:hover > polygon, #mapEach #KNH > [id^=KNH]:hover > path, #mapEach #KNH > [id^=KNH]:hover > polyline {
+    fill: lime; }
+  #mapEach #MFK > [id^=MFK] {
+    cursor: pointer; }
+  #mapEach #MFK > [id^=MFK]:hover > polygon, #mapEach #MFK > [id^=MFK]:hover > path, #mapEach #MFK > [id^=MFK]:hover > polyline {
+    fill: lime; }
+  #mapEach #LAB > [id^=LAB] {
+    cursor: pointer; }
+  #mapEach #LAB > [id^=LAB]:hover > polygon, #mapEach #LAB > [id^=LAB]:hover > path, #mapEach #LAB > [id^=LAB]:hover > polyline {
+    fill: lime; }
+  #mapEach #MAB > [id^=MAB] {
+    cursor: pointer; }
+  #mapEach #MAB > [id^=MAB]:hover > polygon, #mapEach #MAB > [id^=MAB]:hover > path, #mapEach #MAB > [id^=MAB]:hover > polyline {
+    fill: lime; }
 
 /*# sourceMappingURL=styles.css.map */
