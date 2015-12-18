@@ -1,6 +1,7 @@
 $break: 800px;
 
 $oceanColor: #9ce5ff;
+$highlightColor: #00ffb0;
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +16,8 @@ svg {
 // map
 $textColor: black;
 $inactiveColor: white;
-$hoverColor: #00ffb0;
-$selectColor: #00ffb0;
+$hoverColor: $highlightColor;
+$selectColor: $highlightColor;
 $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
 
 #bigmap {
@@ -65,22 +66,54 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     }
   }
 }
+@mixin close($thickness) {
+  &:before, &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: $thickness;
+    background: $textColor;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
 #info {
+  box-sizing: border-box;
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px 20px;
+  margin: 0;
+  padding: 0;
   background: white;
+  border-top: 2px solid black;
   color: $textColor;
 
+  > .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    $x: 48px;
+    width: $x;
+    height: $x;
+    margin: 2px 0;
+    @include close(2px);
+  }
+
   > #name {
-    margin: 14px 0;
+    margin: 0;
+    padding: 14px;
     font-size: 18px;
+    background: $highlightColor;
   }
   > #detail {
-    margin: 14px 0;
+    margin: 14px;
     font-size: 14px;
   }
 
@@ -170,24 +203,18 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       &:hover {
         background: $selectColor;
       }
-      &:before, &:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: $textColor;
-        position: absolute;
-        top: calc(50% - 1px);
-        left: 0;
-        transform: rotate(45deg);
-      }
-      &:after {
-        transform: rotate(-45deg);
-      }
+      @include close(2px);
     }
   }
   #info {
     position: absolute;
+    border-top: none;
+    > #name {
+      background: none;
+    }
+    > .close {
+      display: none;
+    }
   }
   #d12pointer {
     display: none;
