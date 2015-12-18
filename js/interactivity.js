@@ -1,8 +1,9 @@
 var $bigmap = $('#bigmap');
 var $citymap = $('#citymap');
 var $cities = $citymap.find('.city');
-var $info = $('#info');
 var $citymapclose = $citymap.find('.close');
+var $info = $('#info');
+var $infoclose = $info.find('.close');
 
 var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK'];
 for(city of interactiveCities) {
@@ -48,6 +49,9 @@ $citymapclose.click(function() {
 	$info.hide();
 	$cities.hide();
 	$citymap.hide();
+});
+$infoclose.click(function() {
+	$info.toggleClass('hide', true);
 });
 if($(window).width() < 500)
 	$cities.filter('#NTC').find('> .map').scrollLeft(198);

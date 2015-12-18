@@ -83,8 +83,8 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   }
 }
 #info {
-  box-sizing: border-box;
   display: none;
+  box-sizing: border-box;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -102,7 +102,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     $x: 48px;
     width: $x;
     height: $x;
-    margin: 2px 0;
+    margin: 2px 2px;
     @include close(2px);
   }
 
@@ -176,6 +176,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     background: rgba(0, 0, 0, 0.32);
     > .city {
       display: none;
+
       &:after {
         display: none;
       }
@@ -194,7 +195,8 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       height: $x;
       margin: $x auto;
       position: relative;
-      background: $hoverColor;
+      background: $inactiveColor;
+      border: 2px solid black;
       cursor: pointer;
 
       &.inactive {
@@ -208,7 +210,6 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   }
   #info {
     position: absolute;
-    border-top: none;
     > #name {
       background: none;
     }

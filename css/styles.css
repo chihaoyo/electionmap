@@ -130,8 +130,8 @@ svg {
     fill: #00ffb0; }
 
 #info {
-  box-sizing: border-box;
   display: none;
+  box-sizing: border-box;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -147,7 +147,7 @@ svg {
     right: 0;
     width: 48px;
     height: 48px;
-    margin: 2px 0; }
+    margin: 2px 2px; }
     #info > .close:before, #info > .close:after {
       content: '';
       display: block;
@@ -517,7 +517,8 @@ svg {
       height: 48px;
       margin: 48px auto;
       position: relative;
-      background: #00ffb0;
+      background: white;
+      border: 2px solid black;
       cursor: pointer; }
       #citymap > .close:hover {
         background: #00ffb0; }
@@ -535,8 +536,7 @@ svg {
         transform: rotate(-45deg); }
 
   #info {
-    position: absolute;
-    border-top: none; }
+    position: absolute; }
     #info > #name {
       background: none; }
     #info > .close {
