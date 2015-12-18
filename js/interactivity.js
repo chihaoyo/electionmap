@@ -4,11 +4,11 @@ var $cities = $citymap.find('.city');
 var $info = $citymap.find('#district-info');
 var $close = $citymap.find('#close');
 
-var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF'];
+var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK'];
 for(city of interactiveCities) {
-	$bigmap.find('#cities > #' + city).click(function() {
+	$bigmap.find('#overview > #ov-' + city).click(function() {
 		var $this = $(this);
-		var thisCity = $this.attr('id');
+		var thisCity = $this.attr('id').replace('ov-', '');
 		$this.attr('class', 'active')
 		$citymap.show();
 		$cities.filter('#' + thisCity).show();
@@ -20,7 +20,8 @@ for(city of interactiveCities) {
 
 		var city = db[thisCity];
 		var district = city.districts[thisDistrict - 1];
-		var districtName = city.name + '第' + numerals[thisDistrict] + '選區';
+		var hasOnlyOneDistrict = (city.districts.length < 2);
+		var districtName = city.name + (hasOnlyOneDistrict ? '' : ('第' + numerals[thisDistrict])) + '選區';
 		var districtDetail = '';
 		for(subdistrict of district.subdistricts) {
 			var html = '<div class="subdistrict">' + subdistrict + '</div>';

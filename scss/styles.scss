@@ -1,3 +1,5 @@
+$break: 800px;
+
 $oceanColor: #9ce5ff;
 body {
   margin: 0;
@@ -18,51 +20,51 @@ $selectColor: lime;
 $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
 
 #bigmap {
-  #cities {
-    @each $c in $cities {
-      > ##{$c} {
+  display: none;
+}
+#citymap {
+  display: block;
+  position: relative;
+
+  $gap: 30px;
+  > .city {
+    &:not(:first-child):before {
+      content: '';
+      display: block;
+      width: $gap;
+      height: 1px;
+      margin: $gap auto;
+      background: #ccc;
+    }
+    > .title {
+      text-align: center;
+      margin: $gap 0;
+    }
+    > .map {
+      width: 100%;
+      overflow: scroll;
+      > svg {
+        padding: 25px;
+      }
+    }
+  }
+  @each $c in $cities {
+    ##{$c} {
+      > [id^=#{$c}]:not([id$='disabled']) {
         cursor: pointer;
-        > ##{$c}-name {
-          display: none;
-        }
-        > polygon, > path, > polyline {
-          fill: $inactiveColor;
-        }
       }
-      > ##{$c}:hover {
+      > [id^=#{$c}]:hover {
         > polygon, > path, > polyline {
-          fill: $hoverColor;
-        }
-        > ##{$c}-name {
-          display: block;
-          fill: $textColor;
-        }
-      }
-      > ##{$c}.active {
-        > polygon, > path, > polyline {
-          fill: $hoverColor;
+          fill: $selectColor;
         }
       }
     }
   }
-}
 
-// map-each
-#citymap {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.32);
-  > .city {
-    display: none;
-  }
   > #district-info {
     display: none;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 20px;
@@ -92,46 +94,89 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       }
     }
   }
-  $x: 64px;
-  > #close {
-    width: $x;
-    height: $x;
-    margin: $x auto;
-    position: relative;
-    background: $hoverColor;
-    cursor: pointer;
 
-    &.inactive {
-      background: $inactiveColor;
-    }
-    &:hover {
-      background: $selectColor;
-    }
-    &:before, &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: $textColor;
-      position: absolute;
-      top: calc(50% - 1px);
-      left: 0;
-      transform: rotate(45deg);
-    }
-    &:after {
-      transform: rotate(-45deg);
+}
+@media all and (min-width: $break) {
+  #bigmap {
+    display: block;
+
+    #overview {
+      @each $c in $cities {
+        > #ov-#{$c} {
+          cursor: pointer;
+          > #ov-#{$c}-name {
+            display: none;
+          }
+          > polygon, > path, > polyline {
+            fill: $inactiveColor;
+          }
+        }
+        > #ov-#{$c}:hover {
+          > polygon, > path, > polyline {
+            fill: $hoverColor;
+          }
+          > #ov-#{$c}-name {
+            display: block;
+            fill: $textColor;
+          }
+        }
+        > #ov-#{$c}.active {
+          > polygon, > path, > polyline {
+            fill: $hoverColor;
+          }
+        }
+      }
     }
   }
 
-  @each $c in $cities {
-    ##{$c} {
-      > [id^=#{$c}]:not([id$='disabled']) {
-        cursor: pointer;
+  #citymap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.32);
+    > .city {
+      display: none;
+      &:not(:first-child):before {
+        display: none;
       }
-      > [id^=#{$c}]:hover {
-        > polygon, > path, > polyline {
-          fill: $selectColor;
-        }
+      > .title {
+        display: none;
+      }
+    }
+    > #district-info {
+      position: absolute;
+    }
+    $x: 64px;
+    > #close {
+      width: $x;
+      height: $x;
+      margin: $x auto;
+      position: relative;
+      background: $hoverColor;
+      cursor: pointer;
+
+      &.inactive {
+        background: $inactiveColor;
+      }
+      &:hover {
+        background: $selectColor;
+      }
+      &:before, &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $textColor;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
       }
     }
   }
