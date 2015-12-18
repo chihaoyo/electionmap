@@ -1,8 +1,8 @@
 var $bigmap = $('#bigmap');
 var $citymap = $('#citymap');
 var $cities = $citymap.find('.city');
-var $info = $citymap.find('#district-info');
-var $close = $citymap.find('#close');
+var $info = $('#info');
+var $citymapclose = $citymap.find('.close');
 
 var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK'];
 for(city of interactiveCities) {
@@ -37,15 +37,17 @@ for(city of interactiveCities) {
 		$info.find('#name').html(districtName);
 		$info.find('#detail').html(districtDetail);
 		$info.show();
-		$close.toggleClass('inactive');
+		$citymapclose.toggleClass('inactive');
 	}, function() {
 		$info.hide();
-		$close.toggleClass('inactive');
+		$citymapclose.toggleClass('inactive');
 	});
 }
-$close.click(function() {
+$citymapclose.click(function() {
 	$bigmap.find('.active').attr('class', '');
 	$info.hide();
 	$cities.hide();
 	$citymap.hide();
 });
+if($(window).width() < 500)
+	$cities.filter('#NTC').find('> .map').scrollLeft(198);

@@ -13,14 +13,17 @@ svg {
 
 #citymap {
   display: block;
-  position: relative; }
-  #citymap > .city:not(:first-child):before {
+  position: relative;
+  padding-bottom: 150px; }
+  #citymap > .city:after {
     content: '';
     display: block;
     width: 30px;
     height: 1px;
     margin: 30px auto;
-    background: #ccc; }
+    background: white; }
+  #citymap > .city:last-child:after {
+    display: none; }
   #citymap > .city > .title {
     text-align: center;
     margin: 30px 0; }
@@ -28,128 +31,129 @@ svg {
     width: 100%;
     overflow: scroll; }
     #citymap > .city > .map > svg {
-      padding: 25px; }
+      padding: 30px; }
   #citymap #TPE > [id^=TPE]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TPE > [id^=TPE]:hover > polygon, #citymap #TPE > [id^=TPE]:hover > path, #citymap #TPE > [id^=TPE]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #NTC > [id^=NTC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #NTC > [id^=NTC]:hover > polygon, #citymap #NTC > [id^=NTC]:hover > path, #citymap #NTC > [id^=NTC]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #KEL > [id^=KEL]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KEL > [id^=KEL]:hover > polygon, #citymap #KEL > [id^=KEL]:hover > path, #citymap #KEL > [id^=KEL]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #TYN > [id^=TYN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TYN > [id^=TYN]:hover > polygon, #citymap #TYN > [id^=TYN]:hover > path, #citymap #TYN > [id^=TYN]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #HCC > [id^=HCC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HCC > [id^=HCC]:hover > polygon, #citymap #HCC > [id^=HCC]:hover > path, #citymap #HCC > [id^=HCC]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #HSZ > [id^=HSZ]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HSZ > [id^=HSZ]:hover > polygon, #citymap #HSZ > [id^=HSZ]:hover > path, #citymap #HSZ > [id^=HSZ]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #ZMI > [id^=ZMI]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #ZMI > [id^=ZMI]:hover > polygon, #citymap #ZMI > [id^=ZMI]:hover > path, #citymap #ZMI > [id^=ZMI]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #TXG > [id^=TXG]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TXG > [id^=TXG]:hover > polygon, #citymap #TXG > [id^=TXG]:hover > path, #citymap #TXG > [id^=TXG]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #CHW > [id^=CHW]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CHW > [id^=CHW]:hover > polygon, #citymap #CHW > [id^=CHW]:hover > path, #citymap #CHW > [id^=CHW]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #NAN > [id^=NAN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #NAN > [id^=NAN]:hover > polygon, #citymap #NAN > [id^=NAN]:hover > path, #citymap #NAN > [id^=NAN]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #YLN > [id^=YLN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #YLN > [id^=YLN]:hover > polygon, #citymap #YLN > [id^=YLN]:hover > path, #citymap #YLN > [id^=YLN]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #CYC > [id^=CYC]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CYC > [id^=CYC]:hover > polygon, #citymap #CYC > [id^=CYC]:hover > path, #citymap #CYC > [id^=CYC]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #CYI > [id^=CYI]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #CYI > [id^=CYI]:hover > polygon, #citymap #CYI > [id^=CYI]:hover > path, #citymap #CYI > [id^=CYI]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #TNN > [id^=TNN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TNN > [id^=TNN]:hover > polygon, #citymap #TNN > [id^=TNN]:hover > path, #citymap #TNN > [id^=TNN]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #KHH > [id^=KHH]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KHH > [id^=KHH]:hover > polygon, #citymap #KHH > [id^=KHH]:hover > path, #citymap #KHH > [id^=KHH]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #PIF > [id^=PIF]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #PIF > [id^=PIF]:hover > polygon, #citymap #PIF > [id^=PIF]:hover > path, #citymap #PIF > [id^=PIF]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #ILA > [id^=ILA]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #ILA > [id^=ILA]:hover > polygon, #citymap #ILA > [id^=ILA]:hover > path, #citymap #ILA > [id^=ILA]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #HUN > [id^=HUN]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #HUN > [id^=HUN]:hover > polygon, #citymap #HUN > [id^=HUN]:hover > path, #citymap #HUN > [id^=HUN]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #TTT > [id^=TTT]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #TTT > [id^=TTT]:hover > polygon, #citymap #TTT > [id^=TTT]:hover > path, #citymap #TTT > [id^=TTT]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #MZG > [id^=MZG]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MZG > [id^=MZG]:hover > polygon, #citymap #MZG > [id^=MZG]:hover > path, #citymap #MZG > [id^=MZG]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #KNH > [id^=KNH]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #KNH > [id^=KNH]:hover > polygon, #citymap #KNH > [id^=KNH]:hover > path, #citymap #KNH > [id^=KNH]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #MFK > [id^=MFK]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MFK > [id^=MFK]:hover > polygon, #citymap #MFK > [id^=MFK]:hover > path, #citymap #MFK > [id^=MFK]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #LAB > [id^=LAB]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #LAB > [id^=LAB]:hover > polygon, #citymap #LAB > [id^=LAB]:hover > path, #citymap #LAB > [id^=LAB]:hover > polyline {
-    fill: lime; }
+    fill: #00ffb0; }
   #citymap #MAB > [id^=MAB]:not([id$='disabled']) {
     cursor: pointer; }
   #citymap #MAB > [id^=MAB]:hover > polygon, #citymap #MAB > [id^=MAB]:hover > path, #citymap #MAB > [id^=MAB]:hover > polyline {
-    fill: lime; }
-  #citymap > #district-info {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    background: white;
-    color: black; }
-    #citymap > #district-info > #name {
-      margin: 14px 0;
-      font-size: 18px; }
-    #citymap > #district-info > #detail {
-      margin: 14px 0;
-      font-size: 14px; }
-    #citymap > #district-info .subdistrict {
+    fill: #00ffb0; }
+
+#info {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: white;
+  color: black; }
+  #info > #name {
+    margin: 14px 0;
+    font-size: 18px; }
+  #info > #detail {
+    margin: 14px 0;
+    font-size: 14px; }
+  #info .subdistrict {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em; }
+  #info .boroughs {
+    font-size: 11px; }
+    #info .boroughs .borough {
       display: inline-block;
       vertical-align: top;
       margin-right: 1em; }
-    #citymap > #district-info .boroughs {
-      font-size: 11px; }
-      #citymap > #district-info .boroughs .borough {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 1em; }
 
 @media all and (min-width: 800px) {
   #bigmap {
@@ -159,313 +163,313 @@ svg {
       #bigmap #overview > #ov-TPE > #ov-TPE-name {
         display: none; }
       #bigmap #overview > #ov-TPE > polygon, #bigmap #overview > #ov-TPE > path, #bigmap #overview > #ov-TPE > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-TPE:hover > polygon, #bigmap #overview > #ov-TPE:hover > path, #bigmap #overview > #ov-TPE:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TPE:hover > #ov-TPE-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-TPE.active > polygon, #bigmap #overview > #ov-TPE.active > path, #bigmap #overview > #ov-TPE.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-NTC {
       cursor: pointer; }
       #bigmap #overview > #ov-NTC > #ov-NTC-name {
         display: none; }
       #bigmap #overview > #ov-NTC > polygon, #bigmap #overview > #ov-NTC > path, #bigmap #overview > #ov-NTC > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-NTC:hover > polygon, #bigmap #overview > #ov-NTC:hover > path, #bigmap #overview > #ov-NTC:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-NTC:hover > #ov-NTC-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-NTC.active > polygon, #bigmap #overview > #ov-NTC.active > path, #bigmap #overview > #ov-NTC.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KEL {
       cursor: pointer; }
       #bigmap #overview > #ov-KEL > #ov-KEL-name {
         display: none; }
       #bigmap #overview > #ov-KEL > polygon, #bigmap #overview > #ov-KEL > path, #bigmap #overview > #ov-KEL > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-KEL:hover > polygon, #bigmap #overview > #ov-KEL:hover > path, #bigmap #overview > #ov-KEL:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KEL:hover > #ov-KEL-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-KEL.active > polygon, #bigmap #overview > #ov-KEL.active > path, #bigmap #overview > #ov-KEL.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TYN {
       cursor: pointer; }
       #bigmap #overview > #ov-TYN > #ov-TYN-name {
         display: none; }
       #bigmap #overview > #ov-TYN > polygon, #bigmap #overview > #ov-TYN > path, #bigmap #overview > #ov-TYN > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-TYN:hover > polygon, #bigmap #overview > #ov-TYN:hover > path, #bigmap #overview > #ov-TYN:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TYN:hover > #ov-TYN-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-TYN.active > polygon, #bigmap #overview > #ov-TYN.active > path, #bigmap #overview > #ov-TYN.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HCC {
       cursor: pointer; }
       #bigmap #overview > #ov-HCC > #ov-HCC-name {
         display: none; }
       #bigmap #overview > #ov-HCC > polygon, #bigmap #overview > #ov-HCC > path, #bigmap #overview > #ov-HCC > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-HCC:hover > polygon, #bigmap #overview > #ov-HCC:hover > path, #bigmap #overview > #ov-HCC:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HCC:hover > #ov-HCC-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-HCC.active > polygon, #bigmap #overview > #ov-HCC.active > path, #bigmap #overview > #ov-HCC.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HSZ {
       cursor: pointer; }
       #bigmap #overview > #ov-HSZ > #ov-HSZ-name {
         display: none; }
       #bigmap #overview > #ov-HSZ > polygon, #bigmap #overview > #ov-HSZ > path, #bigmap #overview > #ov-HSZ > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-HSZ:hover > polygon, #bigmap #overview > #ov-HSZ:hover > path, #bigmap #overview > #ov-HSZ:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HSZ:hover > #ov-HSZ-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-HSZ.active > polygon, #bigmap #overview > #ov-HSZ.active > path, #bigmap #overview > #ov-HSZ.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-ZMI {
       cursor: pointer; }
       #bigmap #overview > #ov-ZMI > #ov-ZMI-name {
         display: none; }
       #bigmap #overview > #ov-ZMI > polygon, #bigmap #overview > #ov-ZMI > path, #bigmap #overview > #ov-ZMI > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-ZMI:hover > polygon, #bigmap #overview > #ov-ZMI:hover > path, #bigmap #overview > #ov-ZMI:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-ZMI:hover > #ov-ZMI-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-ZMI.active > polygon, #bigmap #overview > #ov-ZMI.active > path, #bigmap #overview > #ov-ZMI.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TXG {
       cursor: pointer; }
       #bigmap #overview > #ov-TXG > #ov-TXG-name {
         display: none; }
       #bigmap #overview > #ov-TXG > polygon, #bigmap #overview > #ov-TXG > path, #bigmap #overview > #ov-TXG > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-TXG:hover > polygon, #bigmap #overview > #ov-TXG:hover > path, #bigmap #overview > #ov-TXG:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TXG:hover > #ov-TXG-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-TXG.active > polygon, #bigmap #overview > #ov-TXG.active > path, #bigmap #overview > #ov-TXG.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CHW {
       cursor: pointer; }
       #bigmap #overview > #ov-CHW > #ov-CHW-name {
         display: none; }
       #bigmap #overview > #ov-CHW > polygon, #bigmap #overview > #ov-CHW > path, #bigmap #overview > #ov-CHW > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-CHW:hover > polygon, #bigmap #overview > #ov-CHW:hover > path, #bigmap #overview > #ov-CHW:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CHW:hover > #ov-CHW-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-CHW.active > polygon, #bigmap #overview > #ov-CHW.active > path, #bigmap #overview > #ov-CHW.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-NAN {
       cursor: pointer; }
       #bigmap #overview > #ov-NAN > #ov-NAN-name {
         display: none; }
       #bigmap #overview > #ov-NAN > polygon, #bigmap #overview > #ov-NAN > path, #bigmap #overview > #ov-NAN > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-NAN:hover > polygon, #bigmap #overview > #ov-NAN:hover > path, #bigmap #overview > #ov-NAN:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-NAN:hover > #ov-NAN-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-NAN.active > polygon, #bigmap #overview > #ov-NAN.active > path, #bigmap #overview > #ov-NAN.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-YLN {
       cursor: pointer; }
       #bigmap #overview > #ov-YLN > #ov-YLN-name {
         display: none; }
       #bigmap #overview > #ov-YLN > polygon, #bigmap #overview > #ov-YLN > path, #bigmap #overview > #ov-YLN > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-YLN:hover > polygon, #bigmap #overview > #ov-YLN:hover > path, #bigmap #overview > #ov-YLN:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-YLN:hover > #ov-YLN-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-YLN.active > polygon, #bigmap #overview > #ov-YLN.active > path, #bigmap #overview > #ov-YLN.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CYC {
       cursor: pointer; }
       #bigmap #overview > #ov-CYC > #ov-CYC-name {
         display: none; }
       #bigmap #overview > #ov-CYC > polygon, #bigmap #overview > #ov-CYC > path, #bigmap #overview > #ov-CYC > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-CYC:hover > polygon, #bigmap #overview > #ov-CYC:hover > path, #bigmap #overview > #ov-CYC:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CYC:hover > #ov-CYC-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-CYC.active > polygon, #bigmap #overview > #ov-CYC.active > path, #bigmap #overview > #ov-CYC.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CYI {
       cursor: pointer; }
       #bigmap #overview > #ov-CYI > #ov-CYI-name {
         display: none; }
       #bigmap #overview > #ov-CYI > polygon, #bigmap #overview > #ov-CYI > path, #bigmap #overview > #ov-CYI > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-CYI:hover > polygon, #bigmap #overview > #ov-CYI:hover > path, #bigmap #overview > #ov-CYI:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-CYI:hover > #ov-CYI-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-CYI.active > polygon, #bigmap #overview > #ov-CYI.active > path, #bigmap #overview > #ov-CYI.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TNN {
       cursor: pointer; }
       #bigmap #overview > #ov-TNN > #ov-TNN-name {
         display: none; }
       #bigmap #overview > #ov-TNN > polygon, #bigmap #overview > #ov-TNN > path, #bigmap #overview > #ov-TNN > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-TNN:hover > polygon, #bigmap #overview > #ov-TNN:hover > path, #bigmap #overview > #ov-TNN:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TNN:hover > #ov-TNN-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-TNN.active > polygon, #bigmap #overview > #ov-TNN.active > path, #bigmap #overview > #ov-TNN.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KHH {
       cursor: pointer; }
       #bigmap #overview > #ov-KHH > #ov-KHH-name {
         display: none; }
       #bigmap #overview > #ov-KHH > polygon, #bigmap #overview > #ov-KHH > path, #bigmap #overview > #ov-KHH > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-KHH:hover > polygon, #bigmap #overview > #ov-KHH:hover > path, #bigmap #overview > #ov-KHH:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KHH:hover > #ov-KHH-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-KHH.active > polygon, #bigmap #overview > #ov-KHH.active > path, #bigmap #overview > #ov-KHH.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-PIF {
       cursor: pointer; }
       #bigmap #overview > #ov-PIF > #ov-PIF-name {
         display: none; }
       #bigmap #overview > #ov-PIF > polygon, #bigmap #overview > #ov-PIF > path, #bigmap #overview > #ov-PIF > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-PIF:hover > polygon, #bigmap #overview > #ov-PIF:hover > path, #bigmap #overview > #ov-PIF:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-PIF:hover > #ov-PIF-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-PIF.active > polygon, #bigmap #overview > #ov-PIF.active > path, #bigmap #overview > #ov-PIF.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-ILA {
       cursor: pointer; }
       #bigmap #overview > #ov-ILA > #ov-ILA-name {
         display: none; }
       #bigmap #overview > #ov-ILA > polygon, #bigmap #overview > #ov-ILA > path, #bigmap #overview > #ov-ILA > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-ILA:hover > polygon, #bigmap #overview > #ov-ILA:hover > path, #bigmap #overview > #ov-ILA:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-ILA:hover > #ov-ILA-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-ILA.active > polygon, #bigmap #overview > #ov-ILA.active > path, #bigmap #overview > #ov-ILA.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HUN {
       cursor: pointer; }
       #bigmap #overview > #ov-HUN > #ov-HUN-name {
         display: none; }
       #bigmap #overview > #ov-HUN > polygon, #bigmap #overview > #ov-HUN > path, #bigmap #overview > #ov-HUN > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-HUN:hover > polygon, #bigmap #overview > #ov-HUN:hover > path, #bigmap #overview > #ov-HUN:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-HUN:hover > #ov-HUN-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-HUN.active > polygon, #bigmap #overview > #ov-HUN.active > path, #bigmap #overview > #ov-HUN.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TTT {
       cursor: pointer; }
       #bigmap #overview > #ov-TTT > #ov-TTT-name {
         display: none; }
       #bigmap #overview > #ov-TTT > polygon, #bigmap #overview > #ov-TTT > path, #bigmap #overview > #ov-TTT > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-TTT:hover > polygon, #bigmap #overview > #ov-TTT:hover > path, #bigmap #overview > #ov-TTT:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-TTT:hover > #ov-TTT-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-TTT.active > polygon, #bigmap #overview > #ov-TTT.active > path, #bigmap #overview > #ov-TTT.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MZG {
       cursor: pointer; }
       #bigmap #overview > #ov-MZG > #ov-MZG-name {
         display: none; }
       #bigmap #overview > #ov-MZG > polygon, #bigmap #overview > #ov-MZG > path, #bigmap #overview > #ov-MZG > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-MZG:hover > polygon, #bigmap #overview > #ov-MZG:hover > path, #bigmap #overview > #ov-MZG:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MZG:hover > #ov-MZG-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-MZG.active > polygon, #bigmap #overview > #ov-MZG.active > path, #bigmap #overview > #ov-MZG.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KNH {
       cursor: pointer; }
       #bigmap #overview > #ov-KNH > #ov-KNH-name {
         display: none; }
       #bigmap #overview > #ov-KNH > polygon, #bigmap #overview > #ov-KNH > path, #bigmap #overview > #ov-KNH > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-KNH:hover > polygon, #bigmap #overview > #ov-KNH:hover > path, #bigmap #overview > #ov-KNH:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-KNH:hover > #ov-KNH-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-KNH.active > polygon, #bigmap #overview > #ov-KNH.active > path, #bigmap #overview > #ov-KNH.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MFK {
       cursor: pointer; }
       #bigmap #overview > #ov-MFK > #ov-MFK-name {
         display: none; }
       #bigmap #overview > #ov-MFK > polygon, #bigmap #overview > #ov-MFK > path, #bigmap #overview > #ov-MFK > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-MFK:hover > polygon, #bigmap #overview > #ov-MFK:hover > path, #bigmap #overview > #ov-MFK:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MFK:hover > #ov-MFK-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-MFK.active > polygon, #bigmap #overview > #ov-MFK.active > path, #bigmap #overview > #ov-MFK.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-LAB {
       cursor: pointer; }
       #bigmap #overview > #ov-LAB > #ov-LAB-name {
         display: none; }
       #bigmap #overview > #ov-LAB > polygon, #bigmap #overview > #ov-LAB > path, #bigmap #overview > #ov-LAB > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-LAB:hover > polygon, #bigmap #overview > #ov-LAB:hover > path, #bigmap #overview > #ov-LAB:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-LAB:hover > #ov-LAB-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-LAB.active > polygon, #bigmap #overview > #ov-LAB.active > path, #bigmap #overview > #ov-LAB.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MAB {
       cursor: pointer; }
       #bigmap #overview > #ov-MAB > #ov-MAB-name {
         display: none; }
       #bigmap #overview > #ov-MAB > polygon, #bigmap #overview > #ov-MAB > path, #bigmap #overview > #ov-MAB > polyline {
-        fill: #aaa; }
+        fill: white; }
     #bigmap #overview > #ov-MAB:hover > polygon, #bigmap #overview > #ov-MAB:hover > path, #bigmap #overview > #ov-MAB:hover > polyline {
-      fill: white; }
+      fill: #00ffb0; }
     #bigmap #overview > #ov-MAB:hover > #ov-MAB-name {
       display: block;
       fill: black; }
     #bigmap #overview > #ov-MAB.active > polygon, #bigmap #overview > #ov-MAB.active > path, #bigmap #overview > #ov-MAB.active > polyline {
-      fill: white; }
+      fill: #00ffb0; }
 
   #citymap {
     display: none;
@@ -474,27 +478,26 @@ svg {
     left: 0;
     width: 100vw;
     height: 100vh;
+    padding: 0;
     background: rgba(0, 0, 0, 0.32); }
     #citymap > .city {
       display: none; }
-      #citymap > .city:not(:first-child):before {
+      #citymap > .city:after {
         display: none; }
       #citymap > .city > .title {
         display: none; }
-    #citymap > #district-info {
-      position: absolute; }
-    #citymap > #close {
-      width: 64px;
-      height: 64px;
-      margin: 64px auto;
+      #citymap > .city > .map > svg {
+        padding: 0; }
+    #citymap > .close {
+      width: 48px;
+      height: 48px;
+      margin: 48px auto;
       position: relative;
-      background: white;
+      background: #00ffb0;
       cursor: pointer; }
-      #citymap > #close.inactive {
-        background: #aaa; }
-      #citymap > #close:hover {
-        background: lime; }
-      #citymap > #close:before, #citymap > #close:after {
+      #citymap > .close:hover {
+        background: #00ffb0; }
+      #citymap > .close:before, #citymap > .close:after {
         content: '';
         display: block;
         width: 100%;
@@ -504,7 +507,13 @@ svg {
         top: calc(50% - 1px);
         left: 0;
         transform: rotate(45deg); }
-      #citymap > #close:after {
-        transform: rotate(-45deg); } }
+      #citymap > .close:after {
+        transform: rotate(-45deg); }
+
+  #info {
+    position: absolute; }
+
+  #d12pointer {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

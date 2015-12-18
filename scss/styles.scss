@@ -14,27 +14,31 @@ svg {
 
 // map
 $textColor: black;
-$inactiveColor: #aaa;
-$hoverColor: white;
-$selectColor: lime;
+$inactiveColor: white;
+$hoverColor: #00ffb0;
+$selectColor: #00ffb0;
 $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
 
 #bigmap {
   display: none;
 }
 #citymap {
+  $gap: 30px;
   display: block;
   position: relative;
+  padding-bottom: $gap*5;
 
-  $gap: 30px;
   > .city {
-    &:not(:first-child):before {
+    &:after {
       content: '';
       display: block;
       width: $gap;
       height: 1px;
       margin: $gap auto;
-      background: #ccc;
+      background: white;
+    }
+    &:last-child:after {
+      display: none;
     }
     > .title {
       text-align: center;
@@ -44,7 +48,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       width: 100%;
       overflow: scroll;
       > svg {
-        padding: 25px;
+        padding: $gap;
       }
     }
   }
@@ -60,42 +64,41 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       }
     }
   }
+}
+#info {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: white;
+  color: $textColor;
 
-  > #district-info {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    background: white;
-    color: $textColor;
+  > #name {
+    margin: 14px 0;
+    font-size: 18px;
+  }
+  > #detail {
+    margin: 14px 0;
+    font-size: 14px;
+  }
 
-    > #name {
-      margin: 14px 0;
-      font-size: 18px;
-    }
-    > #detail {
-      margin: 14px 0;
-      font-size: 14px;
-    }
-
-    .subdistrict {
+  .subdistrict {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em;
+  }
+  .boroughs {
+    font-size: 11px;
+    .borough {
       display: inline-block;
       vertical-align: top;
       margin-right: 1em;
     }
-    .boroughs {
-      font-size: 11px;
-      .borough {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 1em;
-      }
-    }
   }
-
 }
+
 @media all and (min-width: $break) {
   #bigmap {
     display: block;
@@ -136,21 +139,24 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     left: 0;
     width: 100vw;
     height: 100vh;
+    padding: 0;
     background: rgba(0, 0, 0, 0.32);
     > .city {
       display: none;
-      &:not(:first-child):before {
+      &:after {
         display: none;
       }
       > .title {
         display: none;
       }
+      > .map {
+        > svg {
+          padding: 0;
+        }
+      }
     }
-    > #district-info {
-      position: absolute;
-    }
-    $x: 64px;
-    > #close {
+    $x: 48px;
+    > .close {
       width: $x;
       height: $x;
       margin: $x auto;
@@ -159,7 +165,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       cursor: pointer;
 
       &.inactive {
-        background: $inactiveColor;
+        //background: $inactiveColor;
       }
       &:hover {
         background: $selectColor;
@@ -179,5 +185,11 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
         transform: rotate(-45deg);
       }
     }
+  }
+  #info {
+    position: absolute;
+  }
+  #d12pointer {
+    display: none;
   }
 }
