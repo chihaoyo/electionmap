@@ -28,7 +28,6 @@ var showDetail = function() {
 	$info.find('#name').html(districtName);
 	$info.find('#detail').html(districtDetail);
 	$info.show();
-	$citymapclose.toggleClass('inactive');
 }
 
 var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK'];
