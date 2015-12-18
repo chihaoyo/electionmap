@@ -1,12 +1,13 @@
 $break: 800px;
 
-$oceanColor: #9ce5ff;
-$highlightColor: #00ffb0;
+$ocean: #9ce5ff;
+$green: #00ffb0;
+$red: #ff0055;
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: $oceanColor;
+  background: $ocean;
 }
 svg {
   display: block;
@@ -16,8 +17,8 @@ svg {
 // map
 $textColor: black;
 $inactiveColor: white;
-$hoverColor: $highlightColor;
-$selectColor: $highlightColor;
+$hoverColor: $green;
+$selectColor: $green;
 $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN,TTT,MZG,KNH,MFK,LAB,MAB;
 
 #bigmap {
@@ -67,6 +68,8 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   }
 }
 @mixin close($thickness) {
+  cursor: pointer;
+
   &:before, &:after {
     content: '';
     display: block;
@@ -76,9 +79,13 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   &:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 }
@@ -92,25 +99,37 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   margin: 0;
   padding: 0;
   background: white;
-  border-top: 2px solid black;
+  border-top: 2px solid $textColor;
   color: $textColor;
 
-  > .close {
+  > #close {
     position: absolute;
     top: 0;
     right: 0;
     $x: 48px;
     width: $x;
     height: $x;
-    margin: 2px 2px;
+    margin: 0;
+    background: $red;
     @include close(2px);
   }
 
-  > #name {
+  > #go {
+    display: block;
     margin: 0;
-    padding: 14px;
+    padding: 15px;
     font-size: 18px;
-    background: $highlightColor;
+    line-height: 1;
+    background: $green;
+    color: $textColor;
+    text-decoration: none;
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    > #prompt {
+      margin: -15px 0;
+    }
   }
   > #detail {
     margin: 14px;
@@ -176,6 +195,13 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     background: rgba(0, 0, 0, 0.32);
     > .city {
       display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      &#NTC {
+        transform: translate(-50%, -45%); // special care for NTC
+      }
 
       &:after {
         display: none;
@@ -189,32 +215,19 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
         }
       }
     }
-    $x: 48px;
-    > .close {
-      width: $x;
-      height: $x;
-      margin: $x auto;
-      position: relative;
-      background: $inactiveColor;
-      border: 2px solid black;
-      cursor: pointer;
-
-      &.inactive {
-        //background: $inactiveColor;
-      }
-      &:hover {
-        background: $selectColor;
-      }
-      @include close(2px);
-    }
   }
   #info {
-    position: absolute;
-    > #name {
+    > #go {
       background: none;
+      &:hover {
+        background: $green;
+      }
     }
-    > .close {
-      display: none;
+    > #close {
+      background: none;
+      &:hover {
+        background: $red;
+      }
     }
   }
   #d12pointer {
