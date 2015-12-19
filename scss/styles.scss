@@ -198,8 +198,12 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -55%);
+      -moz-transform: translate(-50%, -55%);
       transform: translate(-50%, -55%);
       &#NTC {
+        -webkit-transform: translate(-50%, -45%);
+        -moz-transform: translate(-50%, -45%);
         transform: translate(-50%, -45%); // special care for NTC
       }
 
