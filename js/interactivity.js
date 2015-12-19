@@ -4,10 +4,18 @@ var $cities = $citymap.find('.city');
 var $info = $('#info');
 var $close = $info.find('#close');
 
-var showDetail = function() {
-	var ids = $(this).attr('id').split('-');
-	var thisCity = ids[0];
-	var thisDistrict = parseInt(ids[1]);
+var showDetail = function(assignedCityID) {
+	var ids, thisCity, thisDistrict;
+	if(assignedCityID.target === undefined) { // not an event; auto show detail
+		ids = undefined;
+		thisCity = assignedCityID;
+		thisDistrict = 1;
+	}
+	else {
+		ids = $(this).attr('id').split('-');
+		thisCity = ids[0];
+		thisDistrict = parseInt(ids[1]);
+	}
 
 	var city = db[thisCity];
 	var district = city.districts[thisDistrict - 1];
@@ -21,7 +29,7 @@ var showDetail = function() {
 			var buffer = subdistrict.split(':');
 			subdistrict = buffer[0];
 			buffer = buffer[1].split(',');
-			html = '<div class="subdistrict"><div>' + subdistrict + buffer.length + '里</div>' + '<div class="boroughs">' + buffer.map(function(v) { return '<div class="borough">' + v + '</div>'; }).join('') + '</div></div>'
+			html = '<div class="subdistrict"><div>' + subdistrict + buffer.length + (thisCity != 'MAB' && thisCity != 'LAB' ? '里' : '行政區') + '</div>' + '<div class="boroughs">' + buffer.map(function(v) { return '<div class="borough">' + v + '</div>'; }).join('') + '</div></div>'
 		}
 		districtDetail += html;
 	}
@@ -30,7 +38,7 @@ var showDetail = function() {
 	$info.show();
 }
 
-var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK'];
+var interactiveCities = ['TPE','NTC','TYN','ZMI','TXG','CHW','NAN','YLN','CYI','TNN','KHH','PIF','KEL','HCC','HSZ','CYC','ILA','HUN','TTT','MZG','KNH','MFK','MAB','LAB'];
 for(city of interactiveCities) {
 	$bigmap.find('#overview > #ov-' + city).click(function() {
 		var $this = $(this);
@@ -38,6 +46,8 @@ for(city of interactiveCities) {
 		$this.attr('class', 'active')
 		$citymap.show();
 		$cities.filter('#' + thisCity).show();
+		if((db[thisCity]).districts.length < 2)
+			showDetail(thisCity);
 	});
 	$cities.filter('#' + city).find('> [id^="' + city + '"]:not([id$="disabled"])').click(showDetail);//.hover(showDetail);
 }
