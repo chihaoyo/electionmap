@@ -1,3 +1,9 @@
+@mixin transform($x) {
+  -webkit-transform: $x;
+  -moz-transform: $x;
+  transform: $x;
+}
+
 $break: 800px;
 
 $ocean: #9ce5ff;
@@ -79,14 +85,10 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
+    @include transform(rotate(45deg));
   }
   &:after {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    @include transform(rotate(-45deg));
   }
 }
 #info {
@@ -101,12 +103,12 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   background: white;
   border-top: 2px solid $textColor;
   color: $textColor;
-
+  $x: 48px;
+  $sqrt2: 1.4142;
   > #close {
     position: absolute;
     top: 0;
     right: 0;
-    $x: 48px;
     width: $x;
     height: $x;
     margin: 0;
@@ -123,12 +125,40 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     background: $green;
     color: $textColor;
     text-decoration: none;
-    > span {
+    > * {
       display: inline-block;
       vertical-align: middle;
+      margin: 0 4px 0 0;
+      padding: 0;
     }
     > #prompt {
-      margin: -15px 0;
+      font-size: 0.85em;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid $textColor;
+    }
+    > #arrow {
+      width: $x/$sqrt2;
+      height: 2px;
+      background: $textColor;
+      position: relative;
+
+      &:before, &:after {
+        content: '';
+        display: block;
+        width: $x/2;
+        height: 2px;
+        background: $textColor;
+        position: absolute;
+        left: calc(50% - 3px);
+      }
+      &:before {
+        top: -$x/4 + 4px;
+        @include transform(rotate(45deg));
+      }
+      &:after {
+        top: $x/4 - 4px;
+        @include transform(rotate(-45deg));
+      }
     }
   }
   > #detail {

@@ -175,11 +175,38 @@ svg {
     background: #00ffb0;
     color: black;
     text-decoration: none; }
-    #info > #go > span {
+    #info > #go > * {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin: 0 4px 0 0;
+      padding: 0; }
     #info > #go > #prompt {
-      margin: -15px 0; }
+      font-size: 0.85em;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid black; }
+    #info > #go > #arrow {
+      width: 33.94145px;
+      height: 2px;
+      background: black;
+      position: relative; }
+      #info > #go > #arrow:before, #info > #go > #arrow:after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: black;
+        position: absolute;
+        left: calc(50% - 3px); }
+      #info > #go > #arrow:before {
+        top: -8px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      #info > #go > #arrow:after {
+        top: 8px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
   #info > #detail {
     margin: 14px;
     font-size: 14px; }
