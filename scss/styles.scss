@@ -28,7 +28,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
   $gap: 30px;
   display: block;
   position: relative;
-  padding-bottom: $gap*5;
+  padding-bottom: $gap*8;
 
   > .city {
     &:after {
