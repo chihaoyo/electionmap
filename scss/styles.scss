@@ -82,6 +82,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
     width: 100%;
     height: $thickness;
     background: $textColor;
+    border-radius: 1px;
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
@@ -140,6 +141,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
       width: $x/$sqrt2;
       height: 2px;
       background: $textColor;
+      border-radius: 1px;
       position: relative;
 
       &:before, &:after {
@@ -148,6 +150,7 @@ $cities: TPE,NTC,KEL,TYN,HCC,HSZ,ZMI,TXG,CHW,NAN,YLN,CYC,CYI,TNN,KHH,PIF,ILA,HUN
         width: $x/2;
         height: 2px;
         background: $textColor;
+        border-radius: 1px;
         position: absolute;
         left: calc(50% - 3px);
       }
