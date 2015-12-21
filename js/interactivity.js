@@ -33,7 +33,7 @@ var showDetail = function(assignedCityID) {
 		}
 		districtDetail += html;
 	}
-	var url = 'constituencies/' + thisCity + '/' + thisDistrict;
+	var url = '' + thisCity + '/' + thisDistrict;
 	console.log(url);
 	$info.find('#go').attr('href', url);
 	$info.find('#name').html(districtName);
